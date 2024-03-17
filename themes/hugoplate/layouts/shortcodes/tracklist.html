@@ -1,0 +1,24 @@
+{{ $modelID := .Page.Param "model_id" }}
+{{ $jsonFile := "/assets/json/tracklist.json" }}
+{{ $tracks := readFile $jsonFile | transform.Unmarshal }}
+<h2>Track List</h2>
+{{ range $tracks }}
+  {{ $audioPath := printf "https://files.aimodels.org/voices/htdemucs/%s/%s/vocals_ai_blended.mp3" .path $modelID | absURL }}
+  <h3>
+    {{ .original_song }}
+    <a href="{{ .link }}" target="_blank">[listen to original]</a>
+  </h3>
+  <div>
+    <audio class="audio-player" controls preload="none">
+      <source src="{{ $audioPath }}" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <p>
+      Tags:
+      {{ range .tags }}
+        <span class="btn btn-sm btn-primary">{{ . }}</span>
+      {{ end }}
+      <br /><br />
+    </p>
+  </div>
+{{ end }}

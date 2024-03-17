@@ -1,0 +1,50 @@
+{{- $relPermalink := .RelPermalink -}}
+{{- $title := .Title -}}
+{{ $urlPathParts := split $relPermalink "/" }}
+{{ if and (strings.HasPrefix $relPermalink "/ai-models/") (not .IsHome) (eq (len $urlPathParts) 4) }}
+  {{ $currentPath := $relPermalink }}
+  {{ $section := site.GetPage "section" "ai-models" }}
+  {{ $subsectionPagesCount := 0 }}
+  {{ range $section.Sections }}
+    {{ if eq .RelPermalink $currentPath }}
+      {{ $subsectionPagesCount = len .Pages }}
+    {{ end }}
+  {{ end }}
+  {{ printf "%s - %d Model Downloads & Examples" $title $subsectionPagesCount }}
+{{ else if and (strings.HasPrefix $relPermalink "/ai-models/") (not .IsHome) (eq (len $urlPathParts) 3) }}
+  {{ $sectionPagesCount := 0 }}
+  {{ $section := site.GetPage "section" "ai-models" }}
+  {{ range $section.Sections }}
+    {{ $sectionPagesCount = add $sectionPagesCount (len .Pages) }}
+  {{ end }}
+  {{ printf "%s - %d Model Examples" $title $sectionPagesCount }}
+<!-- Tools-->
+{{ else if and (strings.HasPrefix $relPermalink "/foundation-model-resources/") (not .IsHome) (eq (len $urlPathParts) 4) }}
+  {{ with .File }}
+    {{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
+    {{ if (fileExists $jsonFile) }}
+      {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+      {{ $entryCount := len $jsonData }}
+      {{ $entryCount }}
+    {{ end }}
+  {{ end }}
+  {{ printf "%s" $title }}
+{{ else if and (strings.HasPrefix $relPermalink "/foundation-model-resources/") (not .IsHome) (eq (len $urlPathParts) 3) }}
+{{ $totalEntries := 0 }}
+{{ range site.RegularPages }}
+  {{ with .File }}
+    {{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
+    {{ if (fileExists $jsonFile) }}
+      {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+      {{ $totalEntries = add $totalEntries (len $jsonData) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+  {{ printf "%d %s" $totalEntries $title }}
+<!-- Default-->
+{{ else if .IsHome }}
+  Unleashing the Power of Open Source AI Models and Machine Learning Tools for Responsible and Trustable AI - AI Models
+{{ else }}
+  {{ $title }}
+{{ end }}
+

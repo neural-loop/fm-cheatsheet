@@ -1,0 +1,47 @@
+<!doctype html>
+<html
+  itemscope
+  lang="{{ site.LanguageCode | default `en-US` }}"
+  itemtype="http://schema.org/WebPage">
+  <head>
+    <!-- head (don't cache it) -->
+    {{ partial "essentials/head.html" . }}
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-BE3HVN9469"></script>
+    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7563926680228471"
+     crossorigin="anonymous"></script>
+    <!-- style (always cache it) -->
+    {{ partialCached "essentials/style.html" . }}
+  </head>
+
+  <body>
+    {{ if not hugo.IsProduction }}
+     <!-- tailwind size indicator -->
+      {{ partial "components/tw-size-indicator.html" . }}
+    {{ end }}
+
+    <!-- header (don't cache it) -->
+    {{ partial "essentials/header.html" . }}
+    {{ partial "search-modal.html" (dict "Context" . ) }}
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- cache partial only in production -->
+    {{ if hugo.IsProduction }}
+      {{ partialCached "essentials/footer.html" . }}
+      {{ partialCached "essentials/script.html" . }}
+    {{ else }}
+      {{ partial "essentials/footer.html" . }}
+      {{ partial "essentials/script.html" . }}
+    {{ end }}
+    <script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // 'config' call
+  gtag('config', 'G-BE3HVN9469');
+  </script>
+</html>

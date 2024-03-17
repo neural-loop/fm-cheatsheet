@@ -1,0 +1,129 @@
+############# English navigation ##############
+
+
+[[main]]
+name = "Categories"
+weight = 2
+
+[[main]]
+parent = "Categories"
+name = "Open Source Categories Directory"
+url = "/foundation-model-resources/"
+weight = 1
+
+[[main]]
+parent = "Categories"
+name = "Machine Learning Benchmarking Tools"
+url = "/foundation-model-resources/collection-benchmarks-tools-evaluating-benchmarking-machine-learning-models/"
+weight = 2
+
+[[main]]
+parent = "Categories"
+name = "Explainability Tools"
+url = "/foundation-model-resources/explainability-fairness-tools-interpreting-auditing-machine-learning-models/"
+weight = 3
+
+[[main]]
+parent = "Categories"
+name = "Privacy Preserving Frameworks"
+url = "/foundation-model-resources/privacy-preserving-federated-learning-frameworks-libraries-secure-machine-learning/"
+weight = 4
+
+[[main]]
+parent = "Categories"
+name = "Adversarial ML Tools"
+url = "/foundation-model-resources/adversarial-machine-learning-tools-resources-robustness-testing-attacks-defense/"
+
+[[main]]
+parent = "Categories"
+name = "Data Labeling Tools"
+url = "/foundation-model-resources/data-annotation-labeling-tools-machine-learning-datasets/"
+
+[[main]]
+parent = "Categories"
+name = "Experiment Management Tools"
+url = "/foundation-model-resources/collection-experiment-management-version-control-tools-ai-development-reproducibility/"
+
+
+[[main]]
+parent = "Categories"
+name = "Metadata Management Tools"
+url = "/foundation-model-resources/metadata-management-frameworks-data-governance-machine-learning-pipelines/"
+
+
+[[main]]
+parent = "Categories"
+name = "Model Serving & Monitoring Tools"
+url = "/foundation-model-resources/tools-frameworks-model-deployment-management-monitoring-validation/"
+
+[[main]]
+name = "Modalities"
+weight = 2
+
+[[main]]
+parent = "Modalities"
+name = "Text"
+url = "/foundation-model-resources/"
+weight = 1
+
+[[main]]
+parent = "Modalities"
+name = "Vision"
+url = "/foundation-model-resources/collection-benchmarks-tools-evaluating-benchmarking-machine-learning-models/"
+weight = 2
+
+[[main]]
+parent = "Modalities"
+name = "Speech"
+url = "/foundation-model-resources/collection-benchmarks-tools-evaluating-benchmarking-machine-learning-models/"
+weight = 3
+
+
+# footer menu
+[[footer]]
+name = "Home"
+haschildren = true
+weight = 1
+
+[[footer]]
+name = "Models Directory"
+url = "/ai-models/"
+
+[[footer]]
+parent = "Models Directory"
+name = "Text to Speech"
+url = "/ai-models/text-to-speech-synthesis/"
+
+[[footer]]
+parent = "Models Directory"
+name = "Generative AI Art"
+url = "/ai-models/generative-ai-art/"
+
+[[footer]]
+parent = "Models Directory"
+name = "Healthcare Medical Imaging"
+url = "/ai-models/healthcare-medical-imaging/"
+
+[[footer]]
+parent = "Models Directory"
+name = "Large Language Models"
+url = "/ai-models/large-language-models/"
+
+[[footer]]
+parent = "Models Directory"
+name = "AI Voice Conversion RVC"
+url = "/ai-models/rvc-models-ai-voice/"
+
+#[[footer]]
+#parent = "Elements"
+#name = "404 Page"
+#url = "404/"
+#
+#[[footer]]
+#parent = "Elements"
+#name = "Categories"
+#url = "categories/"
+#
+#[[footer]]
+#name = "Elements"
+#url = "elements/"

@@ -1,0 +1,13 @@
+{{ $faqPath := printf "%s/%s.json" .File.Dir .File.BaseFileName }}
+{{ $faqData := readFile $faqPath | jsonify }}
+
+{{ with $faqData.mainEntity }}
+  <div class="faq">
+    {{ range . }}
+      <div class="faq-item">
+        <h3>{{ .name }}</h3>
+        {{ .acceptedAnswer.text | safeHTML }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

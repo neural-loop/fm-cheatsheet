@@ -1,0 +1,50 @@
+<div class="bg-transparent dark:bg-transparent md:mb-4">
+  {{ $pageDir := path.Base .File.Dir }}
+
+  {{ if eq $pageDir "rvc-models-ai-voice" }}
+  <div class="bg-transparent dark:bg-transparent">
+    <div
+      class="audio-container rounded"
+      style="padding-bottom: 43.86%;background-image:url('{{ .Params.image }}')">
+      <div class="artistname">{{ .Params.artist }}</div>
+      <a href="{{ .RelPermalink }}" class="btn-sm btn btn-primary"
+      >More Songs</a>
+
+      <audio class="audio-player" controls preload="none">
+        <source
+          src="https://files.aimodels.org/voices/htdemucs/when-i-get-home-139044/vocals/{{ .Params.model_id }}/vocals_ai_blended.mp3"
+          type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  {{ else if eq $pageDir "text-to-speech-synthesis" }}
+  <div class="bg-transparent dark:bg-transparent">
+    <div
+      class="audio-container rounded"
+      style="padding-bottom: 43.86%;background-image:url('{{ .Params.image }}')">
+      <a href="{{ .RelPermalink }}" class="btn-sm btn btn-primary"
+      >{{ .Params.audio_count }} More Samples</a
+      >
+      <audio class="audio-player" controls preload="none">
+        <source src="{{ .Params.audio }}" type="audio/mpeg"/>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  {{ else }}
+  {{ $image:= .Params.image }}
+  {{ if $image }}
+  <a href="{{ .RelPermalink }}">
+    {{ partial "image2" (dict "Src" $image "Alt" .Title "Class" "mb-3 w-full rounded" "Size" "400x200" "Command" "Fit" ) }}
+  </a>
+  {{ end }}
+  {{ end }}
+
+
+  <div class="card-title dark:text-white mb-12 md:mb-0">
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </div>
+</div>

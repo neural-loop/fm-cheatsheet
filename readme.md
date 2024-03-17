@@ -9,8 +9,8 @@
 </h2>
 
 <p align="center">
-  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.121.2" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.121.2&color=f00&logo=hugo" />
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.115.1" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.115.1&color=f00&logo=hugo" />
   </a>
 
   <a href="https://github.com/zeon-studio/hugoplate/blob/main/LICENSE">
@@ -69,7 +69,7 @@ We have included almost everything you need to start your Hugo project. Let's se
 - [PostCSS](https://postcss.org/)
 - [PurgeCSS](https://purgecss.com/)
 - [AutoPrefixer](https://autoprefixer.github.io/)
-- [Hugo Modules](https://gohugo.io/hugo-modules/) by [Gethugothemes](https://gethugothemes.com/hugo-modules)
+- [Hugo Modules](https://gohugo.io/hugo-modules/)
 - [Markdown](https://markdownguide.org/)
 - [Prettier](https://prettier.io/)
 - [Jshint](https://jshint.com/)
@@ -149,16 +149,6 @@ You can change the social links from the `data/social.json` file. Add your socia
 
 We have added some custom scripts to make your life easier. You can use these scripts to help you with your development.
 
-### 👉 Update Theme
-
-If you want to update the theme, then you can use the following command. It will update the theme to the latest version.
-
-```bash
-npm run update-theme
-```
-
-> **Note:** This command will work after running `project-setup` script.
-
 ### 👉 Update Modules
 
 We have added a lot of modules to this template. You can update all the modules using the following command.
@@ -174,8 +164,6 @@ If you want to remove dark mode from your project, then you have to do it manual
 ```bash
 npm run remove-darkmode
 ```
-
-> **Note:** This command will work before running `project-setup` script. If you already run the `project-setup` command, then you have to run `npm run theme-setup` first, and then you can run this command. afterward, you can run `npm run project-setup` again.
 
 ---
 
@@ -218,22 +206,6 @@ If your problem or idea has not been addressed yet, feel free to [open a new iss
 
 Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon.studio/)
 
-**Code License:** Released under the [MIT](https://github.com/zeon-studio/hugoplate/blob/main/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.comzeon-studio/hugoplate/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
-
----
-
-## 🖼️ Showcase
-
-List of projects people are building with **Hugoplate**! Have you built a project with Hugoplate? Submit it by creating a pull request and we'll feature it here!
-
-| [![Open Neuromorphic](https://tinyurl.com/hp7avtje)](https://open-neuromorphic.org/) | [![AI Models](https://tinyurl.com/mu4p7dhb)](https://aimodels.org/) | [![Hugobricks](https://tinyurl.com/4x3uwhm9)](https://www.hugobricks.preview.usecue.com/) | [![ONO LLC](https://tinyurl.com/yxnu6whn)](https://ono.day/) 
-|:---:|:---:|:---:|:---:|
-| **Open Neuromorphic** | **AI Models** | **Hugobricks** | **ONO LLC** |
-
----
-
-## 💻 Need Customization?
-
-If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://zeon.studio/estimate-project).

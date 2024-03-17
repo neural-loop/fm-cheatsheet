@@ -1,0 +1,84 @@
+<div class="mb-8">
+  <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8">
+    <ul class="space-y-4">
+      {{ if .Params.social_website }}
+      <li>
+        <a
+          class="hover:text-primary dark:hover:text-darkmode-primary"
+          href="{{ .Params.social_website }}"
+          target="_blank"
+          rel="nofollow noopener">
+          <i class="pr-2 fa fa-house fa-"></i> {{ replace .Params.social_website "https://" "" }}
+        </a>
+      </li>
+
+      {{ end }}
+      {{ if .Params.social_huggingface }}
+      <li>
+        <a
+          class="hover:text-primary dark:hover:text-darkmode-primary"
+          href="{{ .Params.social_huggingface }}"
+          target="_blank"
+          rel="nofollow noopener noreferrer">
+          <span class="pr-2">🤗</span> {{ replace .Params.social_huggingface "https://" "" }}
+        </a>
+      </li>
+      {{ end }}
+      {{ if .Params.social_twitter }}
+      <li>
+        <a
+          class="hover:text-primary dark:hover:text-darkmode-primary"
+          href="{{ .Params.social_twitter }}"
+          target="_blank"
+          rel="nofollow noopener noreferrer">
+          <i class="pr-2 fab fa-twitter"></i> {{ replace .Params.social_twitter "https://" "" }}
+        </a>
+      </li>
+      {{ end }}
+      {{ if .Params.social_linkedin }}
+      <li>
+        <a
+          class="hover:text-primary dark:hover:text-darkmode-primary"
+          href="{{ .Params.social_linkedin }}"
+          target="_blank"
+          rel="nofollow noopener noreferrer">
+          <i class="pr-2 fab fa-linkedin"></i> {{ replace .Params.social_linkedin "https://" "" }}
+        </a>
+      </li>
+      {{ end }}
+      {{ if .Params.social_github }}
+      <li>
+        <a
+          class="hover:text-primary dark:hover:text-darkmode-primary"
+          href="{{ .Params.social_github }}"
+          target="_blank"
+          rel="nofollow noopener noreferrer">
+          <i class="pr-2 fab fa-github"></i> {{ replace .Params.social_github "https://" "" }}
+        </a>
+      </li>
+      {{ end }}
+      {{ if .Params.social_patreon }}
+      <li>
+        <a
+          class="hover:text-primary dark:hover:text-darkmode-primary"
+          href="{{ .Params.social_patreon }}"
+          target="_blank"
+          rel="nofollow noopener noreferrer">
+          <i class="pr-2 fab fa-patreon"></i> {{ replace .Params.social_patreon "https://" "" }}
+        </a>
+      </li>
+      {{ end }}
+      {{ if .Params.social_discord }}
+      <li>
+        <a
+          class="hover:text-primary dark:hover:text-darkmode-primary"
+          href="{{ .Params.social_discord }}"
+          target="_blank"
+          rel="nofollow noopener noreferrer">
+          <i class="pr-2 fab fa-discord"></i> {{ replace .Params.social_discord "https://" "" }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

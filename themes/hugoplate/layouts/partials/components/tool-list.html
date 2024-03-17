@@ -1,0 +1,40 @@
+{{ with .File }}
+{{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
+{{ if (fileExists $jsonFile) }}
+{{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+<ul class="list-none p-0">
+  {{ range $index, $entry := $jsonData }}
+  <li class="flex items-start mb-6 bg-white dark:bg-neutral-700 p-4 rounded">
+    <img src="{{ $entry.logo_path }}" alt="{{ $entry.title }}" class="bg-white mr-4 mt-4 w-16 h-16 rounded-full">
+    <div>
+      <div class="flex items-center">
+        <h3 class="text-lg font-semibold">
+          {{ $githubUrl := split $entry.url "/" }}
+          <a class="font-extrabold" href="{{ $entry.url }}" target="_blank">{{ $entry.title }}</a></h3>
+        {{ if in $entry.url "github" }}
+        <img src="https://img.shields.io/github/stars/{{index $githubUrl 3}}/{{index $githubUrl 4}}.svg?style=social"
+             style="display: inline; margin-bottom: 0 !important; height: 30px" class="align-middle ml-2 p-0">
+        {{ end }}
+      </div>
+      <p>{{ $entry.description_detail | markdownify }}</p>
+      <p>License: {{ $entry.license }}</p>
+      <div class="mt-2">
+        <div class="ml-auto">
+          <a href="{{ $entry.url }}" class="hover:underline" target="_blank"
+             rel="nofollow noopener noreferrer">
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a><br>
+          {{ if $entry.homepage }}
+          Website: <a href="{{ $entry.homepage }}" class="hover:underline"
+                      target="_blank" rel="nofollow noopener noreferrer">
+          {{ $entry.homepage }}
+        </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ end }}

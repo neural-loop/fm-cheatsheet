@@ -1,0 +1,24 @@
+{{ if .Params.download_url }}
+  <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8">
+    <div class="flex items-center space-x-2">
+      <a
+        href="{{ .Params.download_url }}"
+        target="_blank"
+        rel="nofollow noopener"
+        class="flex items-center space-x-2">
+        <div class="bg-primary text-white rounded-full p-2">
+          &nbsp;&nbsp;<i class="fas fa-download"></i
+          >&nbsp;&nbsp;Download&nbsp;&nbsp;
+        </div>
+        <span>{{ i18n "download_link_text" }}</span>
+      </a>
+      <div>
+        <p class="text-sm dark:text-white">Size: {{ .Params.download_size }}</p>
+        <p class="text-sm dark:text-white">
+          License:
+          {{ .Params.download_license }}
+        </p>
+      </div>
+    </div>
+  </div>
+{{ end }}

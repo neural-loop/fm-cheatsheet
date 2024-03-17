@@ -1,0 +1,212 @@
+[
+  {
+    "title": "AutoGluon",
+    "url": "https://github.com/awslabs/autogluon",
+    "description_detail": "Automated feature, model, and hyperparameter selection for tabular, image, and text data on top of popular machine learning libraries (Scikit-Learn, LightGBM, CatBoost, PyTorch, MXNet).",
+    "license": "Apache License 2.0",
+    "homepage": "https://auto.gluon.ai/",
+    "logo_path": "images/autogluon.png",
+    "description-github": "AutoGluon: AutoML for Image, Text, Time Series, and Tabular Data",
+    "stars": 6582
+  },
+  {
+    "title": "Autokeras",
+    "url": "https://github.com/jhfjhfj1/autokeras",
+    "description_detail": "AutoML library for Keras",
+    "license": "Apache License 2.0",
+    "homepage": "http://autokeras.com/",
+    "logo_path": "https://avatars.githubusercontent.com/keras-team?s=100",
+    "description-github": "AutoML library for deep learning",
+    "stars": 9004
+  },
+  {
+    "title": "AutoML-GS",
+    "url": "https://github.com/minimaxir/automl-gs",
+    "description_detail": "Automatic feature and model search with code generation in Python, on top of common data science libraries (tensorflow, sklearn, etc.).",
+    "license": "MIT License",
+    "homepage": "",
+    "logo_path": "images/automl-gs.jpeg",
+    "description-github": "Provide an input CSV and a target field to predict, generate a model + code to run it.",
+    "stars": 1838
+  },
+  {
+    "title": "auto-sklearn",
+    "url": "https://github.com/automl/auto-sklearn",
+    "description_detail": "Framework to automate algorithm and hyperparameter tuning for sklearn.",
+    "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "homepage": "https://automl.github.io/auto-sklearn",
+    "logo_path": "images/auto-sklearn.png",
+    "description-github": "Automated Machine Learning with scikit-learn",
+    "stars": 7261
+  },
+  {
+    "title": "ENAS via Parameter Sharing",
+    "url": "https://github.com/melodyguan/enas",
+    "description_detail": "Efficient Neural Architecture Search via Parameter Sharing by [authors of paper](https://arxiv.org/abs/1802.03268).",
+    "license": "Apache License 2.0",
+    "homepage": "https://arxiv.org/abs/1802.03268",
+    "logo_path": "images/enas-via-parameter-sharing.jpeg",
+    "description-github": "TensorFlow Code for paper \"Efficient Neural Architecture Search via Parameter Sharing\"",
+    "stars": 1572
+  },
+  {
+    "title": "ENAS-PyTorch",
+    "url": "https://github.com/carpedm20/ENAS-pytorch",
+    "description_detail": "Efficient Neural Architecture Search (ENAS) in PyTorch based https://arxiv.org/abs/1802.03268",
+    "license": "Apache License 2.0",
+    "homepage": "",
+    "logo_path": "images/enas-pytorch.jpeg",
+    "description-github": "PyTorch implementation of \"Efficient Neural Architecture Search via Parameters Sharing\"",
+    "stars": 2662
+  },
+  {
+    "title": "ENAS-Tensorflow",
+    "url": "https://github.com/MINGUKKANG/ENAS-Tensorflow",
+    "description_detail": "Efficient Neural Architecture search via parameter sharing(ENAS) micro search Tensorflow code for windows user.",
+    "license": "No License",
+    "homepage": null,
+    "logo_path": "images/enas-tensorflow.jpeg",
+    "description-github": "Efficient Neural Architecture search via parameter sharing(ENAS) micro search Tensorflow code for windows user",
+    "stars": 112
+  },
+  {
+    "title": "Feature Engine",
+    "url": "https://github.com/feature-engine/feature_engine",
+    "description_detail": "Feature-engine is a Python library that contains several transformers to engineer features for use in machine learning models.",
+    "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "homepage": "https://feature-engine.trainindata.com/",
+    "logo_path": "images/feature-engine.png",
+    "description-github": "Feature engineering package with sklearn like functionality",
+    "stars": 1616
+  },
+  {
+    "title": "Featuretools",
+    "url": "https://github.com/alteryx/featuretools",
+    "description_detail": "An open source framework for automated feature engineering.",
+    "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "homepage": "https://www.featuretools.com",
+    "logo_path": "images/featuretools.png",
+    "description-github": "An open source python library for automated feature engineering",
+    "stars": 6904
+  },
+  {
+    "title": "FLAML",
+    "url": "https://github.com/microsoft/FLAML",
+    "description_detail": "FLAML is a fast library for automated machine learning & tuning.",
+    "license": "MIT License",
+    "homepage": "https://microsoft.github.io/FLAML/",
+    "logo_path": "images/flaml.png",
+    "description-github": "A fast library for AutoML and tuning. Join our Discord: https://discord.gg/Cppx2vSPVP.",
+    "stars": 3459
+  },
+  {
+    "title": "go-featureprocessing",
+    "url": "https://github.com/nikolaydubina/go-featureprocessing",
+    "description_detail": "A feature pre-processing framework in Go that matches functionality of sklearn.",
+    "license": "MIT License",
+    "homepage": "",
+    "logo_path": "images/go-featureprocessing.jpeg",
+    "description-github": "\ud83d\udd25 Fast, simple sklearn-like feature processing for Go",
+    "stars": 104
+  },
+  {
+    "title": "Katib",
+    "url": "https://github.com/kubeflow/katib",
+    "description_detail": "A Kubernetes-based system for Hyperparameter Tuning and Neural Architecture Search.",
+    "license": "Apache License 2.0",
+    "homepage": null,
+    "logo_path": "images/katib.png",
+    "description-github": "Repository for hyperparameter tuning",
+    "stars": 1383
+  },
+  {
+    "title": "keras-tuner",
+    "url": "https://github.com/keras-team/keras-tuner",
+    "description_detail": "Keras Tuner is an easy-to-use, distributable hyperparameter optimization framework that solves the pain points of performing a hyperparameter search. Keras Tuner makes it easy to define a search space and leverage included algorithms to find the best hyperparameter values.",
+    "license": "Apache License 2.0",
+    "homepage": "https://keras.io/keras_tuner/",
+    "logo_path": "images/keras-tuner.jpeg",
+    "description-github": "A Hyperparameter Tuning Library for Keras",
+    "stars": 2795
+  },
+  {
+    "title": "Maggy",
+    "url": "https://github.com/logicalclocks/maggy",
+    "description_detail": "Asynchronous, directed Hyperparameter search and parallel ablation studies on Apache Spark - [(Video)](https://www.youtube.com/watch?v=0Hd1iYEL03w).",
+    "license": "Apache License 2.0",
+    "homepage": "https://maggy.ai",
+    "logo_path": "images/maggy.png",
+    "description-github": "Distribution transparent Machine Learning experiments on Apache Spark",
+    "stars": 88
+  },
+  {
+    "title": "Neural Architecture Search with Controller RNN",
+    "url": "https://github.com/titu1994/neural-architecture-search",
+    "description_detail": "Basic implementation of Controller RNN from [Neural Architecture Search with Reinforcement Learning](https://arxiv.org/abs/1611.01578) and [Learning Transferable Architectures for Scalable Image Recognition](https://arxiv.org/abs/1707.07012).",
+    "license": "MIT License",
+    "homepage": "",
+    "logo_path": "images/neural-architecture-search-with-controller-rnn.jpeg",
+    "description-github": "Basic implementation of [Neural Architecture Search with Reinforcement Learning](https://arxiv.org/abs/1611.01578).",
+    "stars": 420
+  },
+  {
+    "title": "Neural Network Intelligence",
+    "url": "https://github.com/Microsoft/nni",
+    "description_detail": "NNI (Neural Network Intelligence) is a toolkit to help users run automated machine learning (AutoML) experiments.",
+    "license": "MIT License",
+    "homepage": "https://nni.readthedocs.io",
+    "logo_path": "images/neural-network-intelligence.png",
+    "description-github": "An open source AutoML toolkit for automate machine learning lifecycle, including feature engineering, neural architecture search, model compression and hyper-parameter tuning.",
+    "stars": 13460
+  },
+  {
+    "title": "Optuna",
+    "url": "https://github.com/optuna/optuna",
+    "description_detail": "Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning.",
+    "license": "Other",
+    "homepage": "https://optuna.org",
+    "logo_path": "images/optuna.png",
+    "description-github": "A hyperparameter optimization framework",
+    "stars": 9052
+  },
+  {
+    "title": "OSS Vizier",
+    "url": "https://github.com/google/vizier",
+    "description_detail": "OSS Vizier is a Python-based service for black-box optimization and research, one of the first hyperparameter tuning services designed to work at scale.",
+    "license": "Apache License 2.0",
+    "homepage": "https://oss-vizier.readthedocs.io",
+    "logo_path": "images/oss-vizier.png",
+    "description-github": "Python-based research interface for blackbox and hyperparameter optimization, based on the internal Google Vizier Service.",
+    "stars": 1131
+  },
+  {
+    "title": "TPOT",
+    "url": "https://github.com/epistasislab/tpot",
+    "description_detail": "Automation of sklearn pipeline creation (including feature selection, pre-processor, etc.).",
+    "license": "GNU Lesser General Public License v3.0",
+    "homepage": "http://epistasislab.github.io/tpot/",
+    "logo_path": "images/tpot.jpeg",
+    "description-github": "A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming.",
+    "stars": 9355
+  },
+  {
+    "title": "tsfresh",
+    "url": "https://github.com/blue-yonder/tsfresh",
+    "description_detail": "Automatic extraction of relevant features from time series.",
+    "license": "MIT License",
+    "homepage": "http://tsfresh.readthedocs.io",
+    "logo_path": "images/tsfresh.jpeg",
+    "description-github": "Automatic extraction of relevant features from time series:",
+    "stars": 7909
+  },
+  {
+    "title": "Upgini",
+    "url": "https://github.com/upgini/upgini",
+    "description_detail": "Free automated data & feature enrichment library for machine learning: automatically searches through thousands of ready-to-use features from public and community shared data sources and enriches your training dataset with only the accuracy improving features.",
+    "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "homepage": "https://upgini.com",
+    "logo_path": "images/upgini.png",
+    "description-github": "Data search & enrichment library for Machine Learning \u2192 Easily find and add relevant features to your ML pipeline from hundreds of public and premium external data sources optimized for ML models with LLMs and other NNs",
+    "stars": 258
+  }
+]

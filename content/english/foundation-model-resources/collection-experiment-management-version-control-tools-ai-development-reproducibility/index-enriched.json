@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Aim",
+    "url": "https://github.com/aimhubio/aim",
+    "description_detail": "A super-easy way to record, search and compare AI experiments.",
+    "license": "Apache License 2.0",
+    "homepage": "https://aimstack.io",
+    "logo_path": "images/aim.png",
+    "description-github": "Aim \ud83d\udcab \u2014 An easy-to-use & supercharged open-source experiment tracker.",
+    "stars": 4416
+  },
+  {
+    "title": "Catalyst",
+    "url": "https://github.com/catalyst-team/catalyst",
+    "description_detail": "High-level utils for PyTorch DL & RL research. It was developed with a focus on reproducibility, fast experimentation and code/ideas reusing.",
+    "license": "Apache License 2.0",
+    "homepage": "https://catalyst-team.com",
+    "logo_path": "images/catalyst.png",
+    "description-github": "Accelerated deep learning R&D",
+    "stars": 3191
+  },
+  {
+    "title": "ClearML",
+    "url": "https://github.com/allegroai/clearml",
+    "description_detail": "Auto-Magical Experiment Manager & Version Control for AI (previously Trains).",
+    "license": "Apache License 2.0",
+    "homepage": "https://clear.ml/docs",
+    "logo_path": "images/clearml.png",
+    "description-github": "ClearML - Auto-Magical CI/CD to streamline your ML workflow. Experiment Manager, MLOps and Data-Management",
+    "stars": 4936
+  },
+  {
+    "title": "CodaLab",
+    "url": "https://github.com/codalab/codalab-worksheets",
+    "description_detail": "CodaLab Worksheets is a collaborative platform for reproducible research that allows researchers to run, manage, and share their experiments in the cloud. It helps researchers ensure that their runs are reproducible and consistent.",
+    "license": "Other",
+    "homepage": "",
+    "logo_path": "images/codalab.png",
+    "description-github": "A collaborative platform for reproducible research (web interface and CLI).",
+    "stars": 151
+  },
+  {
+    "title": "Data Version Control (DVC)",
+    "url": "https://github.com/iterative/dvc",
+    "description_detail": "A git fork that allows for version management of models.",
+    "license": "Apache License 2.0",
+    "homepage": "https://dvc.org",
+    "logo_path": "images/data-version-control-dvc.png",
+    "description-github": "\ud83e\udd89 ML Experiments Management with Git",
+    "stars": 12683
+  },
+  {
+    "title": "Deepkit",
+    "url": "https://github.com/deepkit/deepkit-ml",
+    "description_detail": "An open-source platform and cross-platform desktop application to execute, track, and debug modern machine learning experiments.",
+    "license": "MIT License",
+    "homepage": "https://ml.deepkit.io",
+    "logo_path": "images/deepkit.png",
+    "description-github": "The collaborative real-time open-source machine learning devtool and training suite: Experiment execution, tracking, and debugging. With server and project management tools.",
+    "stars": 362
+  },
+  {
+    "title": "Dolt",
+    "url": "https://github.com/dolthub/dolt",
+    "description_detail": "Dolt is a SQL database that you can fork, clone, branch, merge, push and pull just like a git repository.",
+    "license": "Apache License 2.0",
+    "homepage": "",
+    "logo_path": "images/dolt.png",
+    "description-github": "Dolt \u2013 Git for Data",
+    "stars": 16087
+  },
+  {
+    "title": "Flor",
+    "url": "https://github.com/ucbrise/flor",
+    "description_detail": "Easy to use logger and automatic version controller made for data scientists who write ML code.",
+    "license": "Apache License 2.0",
+    "homepage": "https://rlnsanz.github.io",
+    "logo_path": "images/flor.jpeg",
+    "description-github": "\ud83c\udf3b FlorFlow: Flor, now with Dataflow",
+    "stars": 144
+  },
+  {
+    "title": "Guild AI",
+    "url": "https://github.com/guildai/guildai",
+    "description_detail": "Open source toolkit that automates and optimizes machine learning experiments.",
+    "license": "Apache License 2.0",
+    "homepage": "https://guild.ai",
+    "logo_path": "images/guild-ai.png",
+    "description-github": "Experiment tracking, ML developer tools",
+    "stars": 838
+  },
+  {
+    "title": "Hangar",
+    "url": "https://github.com/tensorwerk/hangar-py",
+    "description_detail": "Version control for tensor data, git-like semantics on numerical data with high speed and efficiency.",
+    "license": "Apache License 2.0",
+    "homepage": null,
+    "logo_path": "images/hangar.png",
+    "description-github": "Hangar is version control for tensor data. Commit, branch, merge, revert, and collaborate in the data-defined software era.",
+    "stars": 204
+  },
+  {
+    "title": "Keepsake",
+    "url": "https://github.com/replicate/keepsake",
+    "description_detail": "Version control for machine learning.",
+    "license": "Apache License 2.0",
+    "homepage": "https://keepsake.ai",
+    "logo_path": "images/keepsake.jpeg",
+    "description-github": "Version control for machine learning",
+    "stars": 1638
+  },
+  {
+    "title": "lakeFS",
+    "url": "https://github.com/treeverse/lakeFS",
+    "description_detail": "Repeatable, atomic and versioned data lake on top of object storage.",
+    "license": "Apache License 2.0",
+    "homepage": "https://docs.lakefs.io",
+    "logo_path": "images/lakefs.png",
+    "description-github": "lakeFS - Data version control for your data lake | Git for data",
+    "stars": 3841
+  },
+  {
+    "title": "MLflow",
+    "url": "https://github.com/mlflow/mlflow",
+    "description_detail": "Open source platform to manage the ML lifecycle, including experimentation, reproducibility and deployment.",
+    "license": "Apache License 2.0",
+    "homepage": "https://mlflow.org",
+    "logo_path": "images/mlflow.png",
+    "description-github": "Open source platform for the machine learning lifecycle",
+    "stars": 16115
+  },
+  {
+    "title": "ModelDB",
+    "url": "https://github.com/VertaAI/modeldb/",
+    "description_detail": "An open-source system to version machine learning models including their ingredients code, data, config, and environment and to track ML metadata across the model lifecycle.",
+    "license": "Unknown",
+    "homepage": "Unknown",
+    "logo_path": "images/modeldb.png",
+    "description-github": "No Description",
+    "stars": 0
+  },
+  {
+    "title": "ModelStore",
+    "url": "https://github.com/operatorai/modelstore",
+    "description_detail": "An open-source Python library that allows you to version, export, and save a machine learning model to your cloud storage provider.",
+    "license": "Apache License 2.0",
+    "homepage": "",
+    "logo_path": "images/modelstore.png",
+    "description-github": "\ud83c\udfec modelstore is a Python library that allows you to version, export, and save a machine learning model to your filesystem or a cloud storage provider.",
+    "stars": 332
+  },
+  {
+    "title": "ormb",
+    "url": "https://github.com/kleveross/ormb",
+    "description_detail": "Docker for Your ML/DL Models Based on OCI Artifacts.",
+    "license": "Apache License 2.0",
+    "homepage": "",
+    "logo_path": "images/ormb.png",
+    "description-github": "Docker for Your ML/DL Models Based on OCI Artifacts",
+    "stars": 435
+  },
+  {
+    "title": "Polyaxon",
+    "url": "https://github.com/polyaxon/polyaxon",
+    "description_detail": "A platform for reproducible and scalable machine learning and deep learning on kubernetes - [(Video)](https://www.youtube.com/watch?v=Iexwrka_hys).",
+    "license": "Apache License 2.0",
+    "homepage": "https://polyaxon.com",
+    "logo_path": "images/polyaxon.png",
+    "description-github": "MLOps Tools For Managing & Orchestrating The Machine Learning LifeCycle",
+    "stars": 3425
+  },
+  {
+    "title": "Quilt",
+    "url": "https://github.com/quiltdata/quilt",
+    "description_detail": "Versioning, reproducibility and deployment of data and models.",
+    "license": "Apache License 2.0",
+    "homepage": "https://quiltdata.com",
+    "logo_path": "images/quilt.png",
+    "description-github": "Quilt is a data mesh for connecting people with actionable data",
+    "stars": 1296
+  },
+  {
+    "title": "Sacred",
+    "url": "https://github.com/IDSIA/sacred",
+    "description_detail": "Tool to help you configure, organize, log and reproduce machine learning experiments.",
+    "license": "MIT License",
+    "homepage": "",
+    "logo_path": "images/sacred.png",
+    "description-github": "Sacred is a tool to help you configure, organize, log and reproduce experiments developed at IDSIA.",
+    "stars": 4124
+  },
+  {
+    "title": "Studio",
+    "url": "https://github.com/studioml/studio",
+    "description_detail": "Model management framework which minimizes the overhead involved with scheduling, running, monitoring and managing artifacts of your machine learning experiments.",
+    "license": "Apache License 2.0",
+    "homepage": "https://studio.ml",
+    "logo_path": "images/studio.png",
+    "description-github": "Studio: Simplify and expedite model building process",
+    "stars": 377
+  },
+  {
+    "title": "TerminusDB",
+    "url": "https://github.com/terminusdb/terminusdb",
+    "description_detail": "A graph database management system that stores data like git.",
+    "license": "Apache License 2.0",
+    "homepage": "https://terminusdb.com",
+    "logo_path": "images/terminusdb.png",
+    "description-github": "TerminusDB is a distributed database with a collaboration model",
+    "stars": 2527
+  }
+]

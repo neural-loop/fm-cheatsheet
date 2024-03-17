@@ -1,0 +1,21 @@
+<div
+  class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">
+  {{ $image:= .image }}
+  {{ partial "image" (dict "Src" $image "Alt" .name "Class" "mx-auto mb-6 rounded" "Size" "120x120") }}
+  <h4 class="mb-3">
+    {{ .name }}
+  </h4>
+  <p class="mb-4">
+    {{ .description }}
+  </p>
+  <ul class="social-icons">
+    {{ range .social }}
+      <li>
+        <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
+          <span class="sr-only">{{ .name }}</span>
+          <i class="{{ .icon }}"></i>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>

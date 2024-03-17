@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{ with .File }}
+{{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
+{{ if (fileExists $jsonFile) }}
+{{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+{{ $.Scratch.Set "entryCount" (len $jsonData) }}
+{{ end }}
+{{ end }}
+
+<section>
+  <div class="container text-left">
+    <div
+      class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light rounded-2xl bg-gradient-to-b px-8
+        pt-12 pb-6">
+      <h1>{{ .Scratch.Get "entryCount" }} {{ .Title | title }}</h1>
+      <p>{{ .Description }}</p>
+      <p>{{ .Content }}</p>
+      <div class="mt-6 flex items-end justify-between">
+        {{ partial "components/breadcrumb" (dict "Context" . "Class" "align-text-bottom") }}
+        {{ if .Params.license }}
+        {{ partial "components/license" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section pt-7">
+  <div class="container">
+    <div class="row justify-center">
+      <article class="lg:col-8">
+        <div class="content mb-10">
+          <h2 class="pb-2">Open Source {{ .Params.short_name }}</h2>
+          {{ partial "components/tool-list" . }}
+          <p>Last Updated: {{ .Date | time.Format ":date_medium" }}</p>
+        </div>
+      </article>
+
+      <div class="lg:col-4">
+        <div class="text-center">
+          <p>~ Sharing is Caring ~</p>
+          {{ partial "social-share" (dict "Context" . "Class" "pb-4 share-icons" "Title" (i18n "") "Whatsapp" true
+          "Telegram" false) }}
+        </div>
+        <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8">
+          <ul class="space-y-4">
+            {{ $currentSection := .Section }}
+            {{ range site.RegularPages }}
+            {{ if and (eq .Section $currentSection) (eq .Params.highlight true) }}
+            <li>
+              <a class="hover:text-primary dark:hover:text-darkmode-primary flex justify-between items-center"
+                 href="{{ .Permalink }}" style="min-width: 150px;">
+                <h3 class="font-medium">{{ .Params.short_name }}</h3>
+                {{ with .File }}
+                {{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
+                {{ if (fileExists $jsonFile) }}
+                {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+                <span class="dark:bg-gray-500 dark:text-white bg-gray-300 font-bold text-black px-2 py-1 rounded-lg">{{ len $jsonData }}</span>
+                {{ end }}
+                {{ end }}
+              </a>
+            </li>
+            {{ end }}
+            {{ end }}
+            {{ range site.RegularPages }}
+            {{ if and (eq .Section $currentSection) (ne .Params.highlight true) }}
+            <li>
+              <a class="hover:text-primary dark:hover:text-darkmode-primary flex justify-between items-center"
+                 href="{{ .Permalink }}" style="min-width: 150px;">
+                <h3 class="font-medium">{{ .Params.short_name }}</h3>
+                {{ with .File }}
+                {{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
+                {{ if (fileExists $jsonFile) }}
+                {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
+                <span class="dark:bg-gray-500 dark:text-white bg-gray-300 font-bold text-black px-2 py-1 rounded-lg">{{ len $jsonData }}</span>
+                {{ end }}
+                {{ end }}
+              </a>
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ end }}
+

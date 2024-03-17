@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is trust, transparency, and safety important in responsible AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the evolving landscape of artificial intelligence, trust, transparency, and safety are foundational elements for responsible AI development. Trust ensures that AI systems are reliable and dependable, fostering user confidence and adoption. Transparency promotes understanding, enabling developers, users, and regulators to comprehend AI decisions. Safety is paramount to prevent unintended consequences, ethical concerns, and to protect against malicious use. Emphasizing these principles establishes a responsible and ethical AI ecosystem, contributing to the long-term success and acceptance of AI technologies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does open source contribute to trust and transparency in AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open source plays a crucial role in building trust and transparency in AI. Open source AI tools allow scrutiny and collaboration among a diverse community, reducing the risk of biases and errors. Transparency is enhanced as the source code is accessible for review, promoting accountability and understanding of how algorithms operate. Open source fosters a collaborative and inclusive environment, encouraging shared responsibility for addressing ethical considerations. By embracing open source practices, the AI community can collectively work towards creating fair, explainable, and trustworthy AI solutions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the significance of the AI Tools for Security, Safety, and Trust directory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The AI Tools for Security, Safety, and Trust directory is a curated resource that empowers AI developers, data scientists, and engineers to navigate the complexities of AI development responsibly. It provides a comprehensive collection of open source tools and frameworks focused on adversarial machine learning, benchmarking, experiment management, data labeling, explainability, privacy preservation, and more. By offering these tools, the directory facilitates the creation of resilient, transparent, and secure AI systems, aligning with the principles of responsible AI development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How was this collection of tools selected? (Citation)",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The AI Tools directory was developed based on <a href='https://github.com/EthicalML/awesome-production-machine-learning'>'awesome produciton machine learning'</a> research by the <a href='https://github.com/EthicalML'>The Institute for Ethical Machine Learning</a> that was released with an MIT License. "
+      }
+    }
+  ]
+}
