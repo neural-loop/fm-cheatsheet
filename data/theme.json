@@ -16,10 +16,10 @@
     },
     "darkmode": {
       "theme_color": {
-        "primary": "#628996",
-        "body": "#03071e",
+        "primary": "#f2d9ca",
+        "body": "#00000e",
         "border": "#628996",
-        "theme_light": "#3a3a3a",
+        "theme_light": "#0f172a",
         "theme_dark": "#000"
       },
       "text_color": {

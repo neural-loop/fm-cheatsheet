@@ -9,9 +9,6 @@
       {{ end }}
       <div class="mt-6 flex items-end justify-between">
         {{ partial "components/breadcrumb" (dict "Context" . "Class" "align-text-bottom") }}
-        {{ if .Params.license }}
-            {{ partial "components/license" . }}
-        {{ end }}
       </div>
     </div>
   </div>

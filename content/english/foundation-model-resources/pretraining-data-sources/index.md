@@ -1,12 +1,11 @@
 ---
 title: "Pretraining Data Sources"
 short_name: "Pretraining Data Sources"
-type: "tools-directory"
-nofollow: true
-date: '2023-12-26'
-description:  "Master your AI models! Explore 15 open-source tools for benchmarking & evaluation - BIG-bench, D4RL, EvalAI & more. Find the perfect tool for FREE!"
+type: "fm-resource-category"
+section_id: 1.1
+date: "2024-03-17"
+description: "Understand the importance of pretraining data for foundation models. Careful data selection impacts model behavior and capabilities."
 highlight: true
-image: machine-learning-benchmark.jpeg
+image: pretraining-data-sources.png
+details: "Pretraining data consists of thousands, or even millions, of individual documents, often web scraped. Model knowledge and behavior will likely reflect a compression of this information and its communication qualities. It's important to carefully select the data composition. This decision should reflect choices in language coverage, mix of sources, and preprocessing decisions."
 ---
-
-Pretraining data consists of thousands, or even millions, of individual documents, often web scraped. As a result, their contents are often superficially documented or understood. Model knowledge and behavior will likely reflect a compression of this information and its communication qualities. Consequently, its important to carefully select the data composition. This decision should reflect choices in the language coverage, the mix of sources, and preprocessing decisions. We highlight a few of the most popular pretraining corpora which have accumulated deeper documentation or analyses.

@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+{{ $data := getJSON "assets/resources.json" }}
+{{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+{{ $entryCount := len $filteredData }}
+
+<section>
+  <div class="container text-left">
+    <div
+      class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light rounded-2xl bg-gradient-to-b px-8
+        pt-12 pb-6">
+      <h1>{{ $entryCount }} {{ .Title | title }}</h1>
+      <p>{{ .Description }}</p>
+      <p>{{ .Content }}</p>
+      <div class="mt-6 flex items-end justify-between">
+        {{ partial "components/breadcrumb" (dict "Context" . "Class" "align-text-bottom") }}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section pt-7 pb-2">
+  <div class="container">
+    <div class="row justify-center">
+      <article class="lg:col-12">
+        <div class="row">
+          <div class="content lg:col-7 mb-10 text-xl">
+            <p>{{ .Params.Details }}</p>
+          </div>
+          <div class="lg:col-5 pb-6">
+            {{ if .Params.image }}
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded" "Size"
+            "1280x720" "Command" "Crop") }}
+            {{ end }}
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section pt-7">
+  <div class="container">
+    <div class="row justify-center">
+      <article class="lg:col-8">
+        <div class="content mb-10">
+          <div class="flex justify-between items-center">
+            <h2 class="pb-2">{{ .Params.short_name }}</h2>
+            <div class="pb-2">
+              <a class="btn-primary btn btn-sm" href="/contribute/">
+                <i class="fas pb-1 fa-circle-plus text-3xl pr-2" style="vertical-align: middle;"></i> Add Resource</a>
+            </div>
+          </div>
+          {{ partial "components/tool-list" . }}
+          <p>Last Updated: {{ .Date | time.Format ":date_medium" }}</p>
+        </div>
+      </article>
+
+
+      <div class="lg:col-4">
+        <div class="text-center">
+          <p>~ Share Page ~</p>
+          {{ partial "social-share" (dict "Context" . "Class" "pb-4 share-icons" "Title" (i18n "") "Whatsapp" true
+          "Telegram" false "Vk" false "Tumblr" false) }}
+        </div>
+        {{ partial "components/categories-list" . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+

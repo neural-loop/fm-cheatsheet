@@ -6,19 +6,25 @@ body {
   background-color: #725c51;
 }
 
+//@media (min-width: 540px) {
+//  .container {
+//    max-width: 100%;
+//  }
+//}
+
 .dark .header-solid {
-  background-color: #623922;
+  background-color: #24150d;
 
 }
 .header {
   padding-top: .5rem !important;
   padding-bottom: .5rem !important;
-  background-color: #dcd2ce !important; /* 50% opacity white background */
+  background-color: rgba(220, 210, 206, 0.58) !important; /* 50% opacity white background */
   box-shadow:0 6px 14px rgba(0, 0, 0, 0.5); /* Slight drop shadow */
   backdrop-filter: blur(20px) invert(0%);
 }
 .dark .header {
-    background-color: rgb(115, 93, 81) !important; /* 50% opacity white background */
+    background-color: rgba(115, 93, 81, 0.53) !important; /* 50% opacity white background */
 }
 
 html {
@@ -256,14 +262,18 @@ pre {
   color: rgb(242, 237, 242);
 }
 
+.accordion {
+  border: 0 !important;
+}
+
 .dark {
   .nav-dropdown-list {
     background-color: #000;
-  }
+      }
 
  code {
     //background-color: #000;
-   color: #000 !important;
+   color: #ffffff !important;
   }
 
   .content :where(figcaption):not(:where([class~="not-prose"] *)) {

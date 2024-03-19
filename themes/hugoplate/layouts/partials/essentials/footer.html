@@ -27,7 +27,9 @@
     </div>
     <div class="row pt-5">
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        <a href="/about/">About</a> | <a href="/contact/">Contact</a> | <a href="/privacy/">Privacy</a> | <a href="/terms-conditions/">Terms</a>
+        <a href="https://allenai.org/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a><br>
+        <a href="https://allenai.org/terms" target="_blank" rel="noopener noreferrer">Terms of Use</a><br>
+        <a href="https://allenai.org/business-code-of-conduct" target="_blank" rel="noopener noreferrer">Business Code of Conduct</a></p>
       </div>
       <div class="lg:col-3 mb-8 text-right mb-0">
         <ul class="footer-menu">
@@ -77,54 +79,52 @@
         </ul>
       </div>
       <div class="lg:col-5 mb-8 text-right lg:text-right">
-        <div class="footer-menu-item frontiers-section">
-          <p>Focus Areas</p>
-          <ul class="footer-menu-subitem">
-            <li>
-              <a href="/foundation-model-resources/"
-                >Directory of AI/ML Tools</a>
-            </li>
-            <li>
-              <a href="/labeling-ai-models/"
-                >Labels for Open Models</a
-              >
-            </li>
-            <li>
-              <a href="/ai-governance/"
-                >AI Governance for Organizations</a
-              >
-            </li>
-            <li>
-              <a href="/foundation-model-resources/collection-benchmarks-tools-evaluating-benchmarking-machine-learning-models/"
-                >Machine Learning Benchmarking Tools</a
-              >
-            </li>
-            <li>
-              <a href="/responsible-open-source-ai/"
-                >Responsible Open Source AI</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-menu-item frontiers-section">
-          <p><a href="/ai-policy-law-governance-ethics/">Governance, Ethics, and Laws</a></p>
-          <ul class="footer-menu-subitem">
-            <li>
-              <a href="/smart-cities-artificial-intelligence/"
-                >Smart Cities and Artificial Intelligence</a
-              >
-            </li>
-            <li>
-              <a href="/national-ai-model-registry/"
-                >National AI Model Registry</a
-              >
-            </li>
-            <li>
-              <a href="/democratization-ai-systems/"
-                >Democratization of AI Systems</a
-              >
-            </li>
-          </ul>
-        </div>
+
+          <ul class="footer-menu">
+          {{ range site.Menus.footer_right }}
+            {{ if not .Parent }}
+              <!-- ensure we're only looping over top level items -->
+              <li class="footer-menu-item">
+                <a
+                  {{ if findRE `^http` .URL }}
+                    target="_blank" rel="noopener"
+                  {{ end }}
+                  href="{{ if findRE `^#` .URL }}
+                    {{ if not $.IsHome }}
+                      {{ site.BaseURL | relLangURL }}
+                    {{ end }}{{ .URL }}
+                  {{ else }}
+                    {{ .URL | relLangURL }}
+                  {{ end }}"
+                  >{{ .Name }}</a
+                >
+                {{ if .HasChildren }}
+                  <!-- check for child items -->
+                  <ul>
+                    {{ range .Children }}
+                      <!-- loop over child items -->
+                      <li class="footer-menu-subitem">
+                        <a
+                          {{ if findRE `^http` .URL }}
+                            target="_blank" rel="noopener"
+                          {{ end }}
+                          href="{{ if findRE `^#` .URL }}
+                            {{ if not $.IsHome }}
+                              {{ site.BaseURL | relLangURL }}
+                            {{ end }}{{ .URL }}
+                          {{ else }}
+                            {{ .URL | relLangURL }}
+                          {{ end }}"
+                          >{{ .Name }}</a
+                        >
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
       </div>
       <div class="lg:col-1 mb-8 bg-gradient text-right lg:text-right"></div>
     </div>

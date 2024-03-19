@@ -1,21 +1,15 @@
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "url": "https://aimodels.org",
-  "logo": "https://aimodels.org/aimodels-logo.png",
-  "name": "AI Models Research",
-  "brand": "AI Models Research",
-  "keywords": "ai models, ai tools, responsible ai, ai ethics, ai governance, ai explainability, ai interpretability, ai fairness, ai privacy, ai security, ai safety, ai robustness, ai reliability, ai transparency, ai accountability, ai trustworthiness, ai bias, ai bias mitigation, ai bias reduction, ai bias removal, ai bias elimination, ai bias prevention, ai bias detection",
-  "slogan": "Open Source AI Models, Research, Tools, and Resources",
-  "sameAs": [
-    "https://twitter.com/aimodels_org",
-    "https://www.linkedin.com/company/ai-models",
-    "https://www.reddit.com/r/aimodels",
-    "https://www.youtube.com/channel/aimodelsorg"
-  ],
+  "url": "https://fmcheatsheet.org",
+  "logo": "https://fmcheatsheet.org/images/foundation-models.png",
+  "name": "Foundation Models Cheat Sheet",
+  "brand": "Foundation Models Cheat Sheet",
+  "keywords": "Foundation Models, AI Models, AI Research, ML Tools, AI Resources",
+  "slogan": "By Foundation Model Developers For Foundation Model Developers",
   "mainEntityOfPage": {
     "@type": "WebSite",
-    "@id": "https://aimodels.org"
+    "@id": "https://fmcheatsheet.org"
   },
-  "description": "Open Source AI Models, Research, ML Tools, and Resources for Responsible AI Development"
+  "description": "Foundation Models Cheat Sheet is a community-driven resource for AI researchers and developers to discover, compare, and use the latest foundation models and tools."
 }

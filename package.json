@@ -6,7 +6,7 @@
   "author": "zeon.studio",
   "scripts": {
     "dev": "hugo server --disableFastRender --noHTTPCache",
-    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic --baseURL=https://aimodels.org -e production --minify",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic -e production --minify",
     "build-j": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
     "test": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "dev:example": "cd exampleSite; hugo server",

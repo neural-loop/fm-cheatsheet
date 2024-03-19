@@ -4,17 +4,20 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="md:col-6 mb-6"><center>
+      <div class="md:col-5 mb-6"><center>
         {{ partial "image" (dict "Src" "/images/foundation-models.png" "Class" "rounded-xl" "Loading" "eager" "Alt" "feature image" "Size"
-        "522x522") }}</center>
+        "400x400" "Command" "Fit")  }}</center>
       </div>
-      <div class="md:col-6">
-        <h1 class="mb-4 text-2xl">Foundation Model Development</h1>
+      <div class="md:col-7">
+        <h1 class="mb-4 text-2xl">For Foundation Model Developers, By Foundation Model Developers</h1>
         <p class="mb-4 text-lg">
           This cheatsheet serves as a succinct guide, prepared by foundation model developers for foundation model developers.<br><br>As the field of AI foundation model development rapidly expands, welcoming new contributors, scientists, and applications, we hope to lower the barrier for new community members to become familiar with the variety of resources, tools, and findings.<br><br> The focus of this cheatsheet is not only, or even primarily, to support building, but to inculcate <b>good practices</b>, <b>awareness of limitations</b>, and <b>general responsible habits</b> as community norms.<br>
         </p>
-        <a class="btn btn-primary" href="https://discord.gg/JMAeKh5PSf"><i class="fa fa-file pr-2"></i>
-          Download Cheetsheet</a>
+        <a class="btn btn-primary" href="foundation-model-development-cheatsheet.pdf"><i class="fa fa-file pr-2"></i>
+          Download Cheetsheet</a><br><br>
+        <a class="btn btn-primary" href="/foundation-model-resources/"><i class="fa fa-square-caret-right pr-2 text-xl"></i>
+          Browse Resources</a>
+
       </div>
     </div>
   </div>
@@ -26,12 +29,14 @@
     <div class="row justify-center">
       <article class="lg:col-12">
         <div class="row">
+          {{ partial "image" (dict "Src" "images/foundation-training-flowchart.png" "Alt" .Title "Class" "w-full rounded" "Size"
+            "1280x" "Command" "Scale") }}
           <div class="content lg:col-7 mb-10 text-xl">
             {{ .Content }}
           </div>
           <div class="lg:col-5 pb-6">
             {{ if .Params.image }}
-            {{ partial "image2" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded" "Size"
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded" "Size"
             "1280x720" "Command" "Crop") }}
             {{ end }}
           </div>
@@ -45,127 +50,104 @@
     <div class="row gx-5">
       <div class="lg:col-8">
         <div class="row">
-          <h2 class="pb-4">Foundation Model Resource Categories</h2>
-                    {{ with .Site.GetPage "section" "foundation-model-resources" }}
-          {{ range .RegularPages }}
-          {{ if eq .Params.highlight true }}
-          <div class="col-6 pb-5">
-            <a href="{{ .Permalink }}">
-              {{ if .Params.image }}
-              {{ partial "image2" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "pb-2 w-full rounded"
-              "Size" "800x320" "Command" "Crop") }}
-              {{ end }}
-              {{ with .File }}
-              {{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
-              {{ if (fileExists $jsonFile) }}
-              {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
-              {{ $.Scratch.Set "entryCount" (len $jsonData) }}
-              {{ end }}
-              {{ end }}
-              <h3>{{
-                .Params.short_name }}</h3>
-              {{ .Description }}
-            </a>
-          </div>
-          {{ end }}
-          {{ end }}
-          {{ end }}
+          <h2 class="pb-4">Development Insights & Best Practices</h2>
+          <div>{{ partial "components/section-details.html" . }}</div>
         </div>
       </div>
       <div class="lg:col-4">
-        <div class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8">
-          <ul class="space-y-4">
-            {{ with .Site.GetPage "section" "foundation-model-resources" }}
-            {{ range .RegularPages }}
-            <li>
-              <a class="hover:text-primary dark:hover:text-darkmode-primary flex justify-between items-center"
-                 href="{{ .Permalink }}" style="min-width: 150px;">
-                <h3 class="font-medium">{{ .Params.short_name }}</h3>
-                {{ with .File }}
-                {{ $jsonFile := printf "%s-enriched.json" (path.Join .Dir .BaseFileName) }}
-                {{ if (fileExists $jsonFile) }}
-                {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
-                <span class="dark:bg-gray-500 dark:text-white bg-gray-300 font-bold text-black px-2 py-1 rounded-lg">{{ len $jsonData }}</span>
-                {{ end }}
-                {{ end }}
-              </a>
-            </li>
-            {{ end }}
-            {{ end }}
-          </ul>
-        </div>
+        {{ partial "components/categories-list" . }}
       </div>
     </div>
   </div>
 </section>
 
+<!-- Credits -->
+<section class="section pt-0 pb-0 bg-white dark:bg-slate-900">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="lg:col-12">
+        <div class="content mb-10">
+            {{ partial "image" (dict "Src" "img.png" "Context" .Page "Alt" .Title "Class" "mx-auto bg-white" "Command" "Fit") }}
+          <p class="mt-0 pt-0 text-sm text-center">Assembled by open model developers from AI2, EleutherAI, Google, Hugging Face, Masakhane, MIT, MLCommons, Princeton, Stanford CRFM, University of California Santa Barbara (UCSB), Univesity College London (UCL) and University of Washington (UW).</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- FAQ Section with Multiple Accordions -->
 <section class="section">
   <div class="container">
     <div class="row gx-5">
       <div class="lg:col-12">
-        <h2 class="mb-8 text-3xl font-semibold">Frequently Asked Questions (FAQ) About Open Source AI</h2>
+        <h2 class="mb-8 text-3xl font-semibold">Frequently Asked Questions (FAQ) About Foundation Models</h2>
       </div>
       <div class="lg:col-12">
         <div class="accordion">
           <!-- FAQ Item 1 -->
           <button class="accordion-header" data-accordion>
-            What is Open Source AI and How Does It Differ from Proprietary Solutions?
+            What exactly is a foundation model?
             <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
-              <path fill="currentColor"
-                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+              <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p class="px-5 pb-5">Open Source AI refers to artificial intelligence projects and frameworks whose source code is freely available for anyone to use, modify, and distribute. This stands in contrast to proprietary solutions where the source code is typically closed and restricted. Open Source AI fosters collaboration, transparency, and community-driven development, allowing a diverse range of contributors to enhance and tailor the technology to their specific needs.</p>
+            <p class="px-5 pb-5">A foundation model is a type of large language model (LLM) or other AI model that has been trained on a massive amount of data. These models have a wide range of capabilities, from generating realistic text to translating languages and creating different forms of creative content.</p>
           </div>
 
           <!-- FAQ Item 2 -->
           <button class="accordion-header" data-accordion>
-            What are the Benefits of Using Open Source AI in Software Development?
+            How do I get started with training my own foundation model?
             <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
-              <path fill="currentColor"
-                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+              <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p class="px-5 pb-5">Using Open Source AI in software development offers several benefits:<br><br>- Collaboration: Developers worldwide can collaborate on improving and extending the technology, fostering innovation and continuous enhancement.<br>- Flexibility: Open Source AI provides the flexibility to customize and adapt the code to specific project requirements, promoting versatility in applications.<br>- Cost-Effectiveness: Organizations can leverage Open Source AI without incurring licensing fees, making it a cost-effective solution for various projects.<br>- Community Support: A vibrant community often surrounds Open Source AI projects, providing support, documentation, and shared knowledge.<br>- Transparency: The transparency of the source code promotes trust, allowing users to understand and validate the functionality and security of the AI solution.</p>
+            <p class="px-5 pb-5">Building a foundation model is a complex task. The cheatsheet has sections on "Data Search, Analysis, & Exploration" tools to help you find and understand training data, as well as "Model Training" sections on repositories and efficiency techniques.</p>
           </div>
 
           <!-- FAQ Item 3 -->
           <button class="accordion-header" data-accordion>
-            How Can I Contribute to Open Source AI Projects?
+            What should I look for in training data?
             <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
-              <path fill="currentColor"
-                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+              <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p class="px-5 pb-5">Contributing to Open Source AI projects can be a rewarding experience. To get started:<br><br>- Explore GitHub or other code repositories to find projects that align with your interests and skills.<br>- Fork the project, make changes or improvements, and submit a pull request.<br>- Engage with the project's community through discussions, forums, or issue tracking.<br>- Contribute to documentation, testing, or addressing reported issues.<br>- Attend community events, webinars, or meetings to connect with fellow contributors and maintainers.</p>
+            <p class="px-5 pb-5">The quality and diversity of your data greatly impact your model. "Pretraining Data Sources" and "Finetuning Data Catalogs" sections of the cheatsheet explain factors to consider like language coverage, data source mixes, and the importance of clear documentation.</p>
           </div>
 
           <!-- FAQ Item 4 -->
           <button class="accordion-header" data-accordion>
-            Are There Any Limitations or Challenges Associated with Open Source AI?
+            Are there environmental impacts from large model training?
             <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
-              <path fill="currentColor"
-                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+              <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p class="px-5 pb-5">While Open Source AI brings numerous advantages, there are some challenges:<br><br>- Maintenance: Projects may rely on community contributions, and without proper maintenance, they might become outdated or face compatibility issues.<br>- Integration Complexity: Integrating open source AI into existing systems may pose challenges due to compatibility and integration complexities.<br>- Support Variability: The level of support can vary between projects, with some having robust communities and others less active.<br>- Learning Curve: Understanding and contributing to complex AI projects may have a steep learning curve for newcomers.</p>
+            <p class="px-5 pb-5">Yes, the computational power needed for training foundation models has a significant carbon footprint. The cheatsheet includes an "Environmental Impact" section with tools and methodologies to estimate and responsibly manage this impact.</p>
           </div>
 
           <!-- FAQ Item 5 -->
           <button class="accordion-header" data-accordion>
-            Can Businesses Use Open Source AI for Commercial Projects?
+            How do I make sure my foundation model is being used responsibly?
             <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
-              <path fill="currentColor"
-                    d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+              <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p class="px-5 pb-5">Yes, businesses can use Open Source AI for commercial projects. Many open source AI projects are released under permissive licenses, allowing businesses to incorporate, modify, and distribute the code in their proprietary applications. However, it's essential to review the specific license terms of each project to ensure compliance and understand any limitations or requirements.</p>
+            <p class="px-5 pb-5">The cheatsheet covers responsible AI practices extensively. Key points include: Thorough model documentation ("Model Documentation" section), Evaluating risks and potential harms ("Model Evaluation" sections), Careful license selection for your model ("License Selection" section), and Potentially monitoring model usage ("Usage Monitoring" section).</p>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <button class="accordion-header" data-accordion>
+            Where can I find more information and keep up with this field?
+            <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
+              <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+            </svg>
+          </button>
+          <div class="accordion-content">
+            <p class="px-5 pb-5">The cheatsheet is actively maintained and encourages community contributions. It's designed to be a starting point, with many sections linking to in-depth resources and repositories.</p>
           </div>
         </div>
       </div>
@@ -173,5 +155,8 @@
   </div>
 </section>
 
+
 <!-- /FAQ Section with Multiple Accordions -->
+
+
 {{ end }}
