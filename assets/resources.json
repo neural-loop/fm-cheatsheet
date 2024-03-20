@@ -1,22 +1,5 @@
 [
   {
-    "name": "BigBench",
-    "description": "A collaborative benchmark of 100s of tasks, probing LLMs on a wide array of unique capabilities.",
-    "modalities": [
-      "Text"
-    ],
-    "categories": [
-      "Model Evaluation: Capabilities"
-    ],
-    "date": "6-2022",
-    "primary_link": "GitHub",
-    "paper_link": "https://arxiv.org/abs/2206.04615",
-    "website_link": "",
-    "github_link": "https://github.com/google/BIG-bench",
-    "huggingface_link": "",
-    "added_by": "Original Authors"
-  },
-  {
     "name": "BigBench Hard",
     "description": "A challenging subset of 23 BigBench tasks where at time of release models did not outperform annotator performance.",
     "modalities": [
@@ -31,7 +14,8 @@
     "website_link": "",
     "github_link": "https://github.com/suzgunmirac/BIG-Bench-Hard",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "suzgunmirac_logo.png"
   },
   {
     "name": "BigCode Evaluation Harness",
@@ -48,7 +32,8 @@
     "website_link": "",
     "github_link": "https://github.com/bigcode-project/bigcode-evaluation-harness/tree/main",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "bigcode-project_logo.png"
   },
   {
     "name": "CLIP benchmark",
@@ -66,7 +51,8 @@
     "website_link": "",
     "github_link": "https://github.com/LAION-AI/CLIP_benchmark",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "LAION-AI_logo.png"
   },
   {
     "name": "DataComp eval suite",
@@ -84,7 +70,8 @@
     "website_link": "https://www.datacomp.ai/",
     "github_link": "https://github.com/mlfoundations/datacomp#evaluation",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "HEIM",
@@ -119,7 +106,8 @@
     "website_link": "https://crfm.stanford.edu/helm/latest/",
     "github_link": "https://github.com/stanford-crfm/helm",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
   },
   {
     "name": "Hugging Face Leaderboards Collection",
@@ -155,7 +143,8 @@
     "website_link": "",
     "github_link": "https://github.com/bigcode-project/octopack",
     "huggingface_link": "https://huggingface.co/datasets/bigcode/humanevalpack",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "bigcode-project_logo.png"
   },
   {
     "name": "Lighteval",
@@ -172,7 +161,8 @@
     "website_link": "",
     "github_link": "https://github.com/huggingface/lighteval",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "LM Evaluation Harness",
@@ -190,7 +180,8 @@
     "website_link": "",
     "github_link": "https://github.com/EleutherAI/lm-evaluation-harness",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
   },
   {
     "name": "LMSys Chatbot Arena",
@@ -207,7 +198,8 @@
     "website_link": "",
     "github_link": "https://github.com/lm-sys/FastChat/blob/main/docs/dataset_release.md",
     "huggingface_link": "https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "lm-sys_logo.png"
   },
   {
     "name": "MMBench",
@@ -225,7 +217,8 @@
     "website_link": "https://opencompass.org.cn/mmbench",
     "github_link": "https://github.com/open-compass/MMBench",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "open-compass_logo.png"
   },
   {
     "name": "MME",
@@ -243,7 +236,8 @@
     "website_link": "",
     "github_link": "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "BradyFU_logo.png"
   },
   {
     "name": "MTEB",
@@ -260,7 +254,8 @@
     "website_link": "",
     "github_link": "https://github.com/embeddings-benchmark/mteb",
     "huggingface_link": "https://huggingface.co/spaces/mteb/leaderboard",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "embeddings-benchmark_logo.png"
   },
   {
     "name": "OpenASR Leaderboard",
@@ -277,7 +272,8 @@
     "website_link": "",
     "github_link": "https://github.com/huggingface/open_asr_leaderboard",
     "huggingface_link": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "OpenFlamingo eval suite",
@@ -295,7 +291,8 @@
     "website_link": "",
     "github_link": "https://github.com/mlfoundations/open_flamingo/tree/main/open_flamingo/eval",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "Open LLM Leaderboard",
@@ -329,7 +326,8 @@
     "website_link": "https://www.swebench.com/",
     "github_link": "https://github.com/princeton-nlp/SWE-bench",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "princeton-nlp_logo.png"
   },
   {
     "name": "The Edinburgh International Accents of English Corpus",
@@ -363,7 +361,8 @@
     "website_link": "https://crfm.stanford.edu/helm/lite/latest/#/",
     "github_link": "https://github.com/stanford-crfm/helm",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
   },
   {
     "name": "MMMU",
@@ -381,7 +380,8 @@
     "website_link": "https://mmmu-benchmark.github.io/",
     "github_link": "https://github.com/MMMU-Benchmark/MMMU",
     "huggingface_link": "https://huggingface.co/datasets/MMMU/MMMU",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "MMMU-Benchmark_logo.png"
   },
   {
     "name": "Anaconda",
@@ -529,7 +529,8 @@
     "website_link": "https://www.dataprovenance.org/",
     "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
     "huggingface_link": "https://huggingface.co/DataProvenanceInitiative",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
   },
   {
     "name": "Datasheet for the Pile",
@@ -672,7 +673,8 @@
     "website_link": "",
     "github_link": "https://github.com/p-lambda/dsir",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "p-lambda_logo.png"
   },
   {
     "name": "DataComp filtering",
@@ -690,7 +692,8 @@
     "website_link": "https://www.datacomp.ai/",
     "github_link": "https://github.com/mlfoundations/datacomp/tree/main#baselines",
     "huggingface_link": "https://huggingface.co/datasets/mlfoundations/datacomp_1b",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "DataComp pre-filtering",
@@ -708,7 +711,8 @@
     "website_link": "https://www.datacomp.ai/",
     "github_link": "https://github.com/mlfoundations/dataset2metadata",
     "huggingface_link": "https://huggingface.co/datasets/mlfoundations/datacomp_1b",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "Detoxify",
@@ -725,7 +729,8 @@
     "website_link": "",
     "github_link": "https://github.com/unitaryai/detoxify",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "unitaryai_logo.png"
   },
   {
     "name": "Dolma's Toolkit",
@@ -742,7 +747,8 @@
     "website_link": "",
     "github_link": "https://github.com/allenai/dolma",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
   },
   {
     "name": "DoReMi",
@@ -759,7 +765,8 @@
     "website_link": "",
     "github_link": "https://github.com/sangmichaelxie/doremi",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "sangmichaelxie_logo.png"
   },
   {
     "name": "fastText language classifier",
@@ -793,7 +800,8 @@
     "website_link": "",
     "github_link": "https://github.com/google-research/url-nlp/tree/main/fun-langid",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
   },
   {
     "name": "GlotLID",
@@ -810,7 +818,8 @@
     "website_link": "",
     "github_link": "https://github.com/cisnlp/GlotLID",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "cisnlp_logo.png"
   },
   {
     "name": "Langdetect",
@@ -827,7 +836,8 @@
     "website_link": "https://pypi.org/project/langdetect/",
     "github_link": "https://github.com/Mimino666/langdetect",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Mimino666_logo.png"
   },
   {
     "name": "Lilac",
@@ -844,7 +854,8 @@
     "website_link": "https://www.lilacml.com/",
     "github_link": "https://github.com/lilacai/lilac",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "lilacai_logo.png"
   },
   {
     "name": "Online Data Mixing",
@@ -861,7 +872,8 @@
     "website_link": "",
     "github_link": "https://github.com/alon-albalak/online-data-mixing",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "alon-albalak_logo.png"
   },
   {
     "name": "OpenLID",
@@ -878,7 +890,8 @@
     "website_link": "",
     "github_link": "https://github.com/laurieburchell/open-lid-dataset",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "laurieburchell_logo.png"
   },
   {
     "name": "Roots data cleaning pipeline",
@@ -895,10 +908,11 @@
     "website_link": "",
     "github_link": "https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training/01a_catalogue_cleaning_and_filtering",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "bigscience-workshop_logo.png"
   },
   {
-    "name": "SpeechBrain’s Spoken language ID model",
+    "name": "SpeechBrain\u2019s Spoken language ID model",
     "description": "Pre-trained spoken language identification model trained on VoxLingua107, dataset of audio sourced from YouTube for 107 languages",
     "modalities": [
       "Speech"
@@ -929,7 +943,8 @@
     "website_link": "",
     "github_link": "https://github.com/EleutherAI/the-pile/tree/master/processing_scripts",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
   },
   {
     "name": "BigBench Canaries",
@@ -946,7 +961,8 @@
     "website_link": "",
     "github_link": "https://github.com/google/BIG-bench/blob/main/bigbench/benchmark_tasks/training_on_test_set/README.md#training-on-the-test-set",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "google_logo.png"
   },
   {
     "name": "Carper AI Decontamination Tool",
@@ -963,7 +979,8 @@
     "website_link": "",
     "github_link": "https://github.com/CarperAI/decontamination/tree/main",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "CarperAI_logo.png"
   },
   {
     "name": "Data Portraits",
@@ -997,7 +1014,8 @@
     "website_link": "https://swj0419.github.io/detect-pretrain.github.io/",
     "github_link": "https://github.com/swj0419/detect-pretrain-code",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "swj0419_logo.png"
   },
   {
     "name": "Interpreting Canary Exposure",
@@ -1050,7 +1068,8 @@
     "website_link": "",
     "github_link": "https://github.com/jmschrei/apricot",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "jmschrei_logo.png"
   },
   {
     "name": "Datacomp image dedup",
@@ -1067,7 +1086,8 @@
     "website_link": "https://www.datacomp.ai/",
     "github_link": "https://github.com/mlfoundations/dataset2metadata",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "Dolma Dedupe Tool",
@@ -1084,7 +1104,8 @@
     "website_link": "",
     "github_link": "https://github.com/allenai/dolma",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
   },
   {
     "name": "Google Text Deduplication",
@@ -1101,7 +1122,8 @@
     "website_link": "",
     "github_link": "https://github.com/google-research/deduplicate-text-datasets",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
   },
   {
     "name": "RedPajama-Data",
@@ -1118,7 +1140,8 @@
     "website_link": "",
     "github_link": "https://github.com/togethercomputer/RedPajama-Data",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "togethercomputer_logo.png"
   },
   {
     "name": "Pile",
@@ -1135,7 +1158,8 @@
     "website_link": "",
     "github_link": "https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "datasets_logo.png"
   },
   {
     "name": "Data Cards Playbook",
@@ -1192,7 +1216,8 @@
     "website_link": "https://www.dataprovenance.org/",
     "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
   },
   {
     "name": "Data Statements",
@@ -1391,7 +1416,8 @@
     "website_link": "",
     "github_link": "https://github.com/viswavi/datafinder",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "viswavi_logo.png"
   },
   {
     "name": "Data Provenance Explorer",
@@ -1408,7 +1434,8 @@
     "website_link": "https://www.dataprovenance.org/",
     "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
     "huggingface_link": "https://huggingface.co/DataProvenanceInitiative",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
   },
   {
     "name": "GAIA Search Tool",
@@ -1459,7 +1486,8 @@
     "website_link": "https://knowyourdata-tfds.withgoogle.com/",
     "github_link": "https://github.com/PAIR-code/knowyourdata",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "PAIR-code_logo.png"
   },
   {
     "name": "LAION search",
@@ -1477,7 +1505,8 @@
     "website_link": "https://rom1504.github.io/clip-retrieval/",
     "github_link": "https://github.com/rom1504/clip-retrieval",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "rom1504_logo.png"
   },
   {
     "name": "NVIDIA Speech Data Explorer",
@@ -1545,7 +1574,8 @@
     "website_link": "https://wimbd.apps.allenai.org/",
     "github_link": "https://github.com/allenai/wimbd",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
   },
   {
     "name": "Everything about Distributed Training and Efficient Finetuning",
@@ -1581,7 +1611,8 @@
     "website_link": "",
     "github_link": "https://github.com/stas00/ml-engineering",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "stas00_logo.png"
   },
   {
     "name": "nanoGPT",
@@ -1598,7 +1629,8 @@
     "website_link": "",
     "github_link": "https://github.com/karpathy/nanoGPT",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "karpathy_logo.png"
   },
   {
     "name": "The EleutherAI Model Training Cookbook",
@@ -1617,7 +1649,8 @@
     "website_link": "",
     "github_link": "https://github.com/EleutherAI/cookbook",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
   },
   {
     "name": "Transformer Inference Arithmetic",
@@ -1689,7 +1722,8 @@
     "website_link": "",
     "github_link": "https://github.com/lfwa/carbontracker",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "lfwa_logo.png"
   },
   {
     "name": "CodeCarbon",
@@ -1708,7 +1742,8 @@
     "website_link": "https://mlco2.github.io/codecarbon/",
     "github_link": "https://github.com/mlco2/codecarbon",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlco2_logo.png"
   },
   {
     "name": "Estimating the Carbon Footprint of BLOOM, a 176B Parameter Language Model",
@@ -1744,7 +1779,8 @@
     "website_link": "",
     "github_link": "https://github.com/Breakend/experiment-impact-tracker",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Breakend_logo.png"
   },
   {
     "name": "Google Cloud Carbon Footprint Measurement",
@@ -1782,7 +1818,8 @@
     "website_link": "",
     "github_link": "https://github.com/Ren-Research/Making-AI-Less-Thirsty",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Ren-Research_logo.png"
   },
   {
     "name": "ML CO2 Impact",
@@ -1839,7 +1876,7 @@
     "added_by": "Original Authors"
   },
   {
-    "name": "AI4Bhārat Indic NLP",
+    "name": "AI4Bh\u0101rat Indic NLP",
     "description": "A repository of Indian language text and speech resources, including datasets.",
     "modalities": [
       "Text",
@@ -1854,7 +1891,8 @@
     "website_link": "https://ai4bharat.iitm.ac.in/",
     "github_link": "https://github.com/AI4Bharat",
     "huggingface_link": "https://huggingface.co/ai4bharat",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "AI4Bharat_logo.png"
   },
   {
     "name": "Arabic NLP Data Catalogue",
@@ -1872,7 +1910,8 @@
     "website_link": "https://arbml.github.io/masader/",
     "github_link": "https://github.com/ARBML",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "ARBML_logo.png"
   },
   {
     "name": "CHiME-5",
@@ -1906,7 +1945,8 @@
     "website_link": "https://www.dataprovenance.org/",
     "github_link": "https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection",
     "huggingface_link": "https://huggingface.co/DataProvenanceInitiative",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Data-Provenance-Initiative_logo.png"
   },
   {
     "name": "ImageNet",
@@ -1941,7 +1981,8 @@
     "website_link": "https://indonlp.github.io/nusa-catalogue/",
     "github_link": "https://github.com/IndoNLP/nusa-crowd",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "IndoNLP_logo.png"
   },
   {
     "name": "Lanfrica",
@@ -1977,7 +2018,8 @@
     "website_link": "https://www.masakhane.io/",
     "github_link": "https://github.com/masakhane-io",
     "huggingface_link": "https://huggingface.co/masakhane",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "masakhane-io_logo.png"
   },
   {
     "name": "MS COCO",
@@ -2030,7 +2072,8 @@
     "website_link": "https://seacrowd.github.io/seacrowd-catalogue/",
     "github_link": "https://github.com/SEACrowd",
     "huggingface_link": "https://huggingface.co/NusaCrowd",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "SEACrowd_logo.png"
   },
   {
     "name": "VoxCeleb",
@@ -2099,7 +2142,8 @@
     "website_link": "",
     "github_link": "https://github.com/OpenAccess-AI-Collective/axolotl",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "OpenAccess-AI-Collective_logo.png"
   },
   {
     "name": "BLIP-2",
@@ -2117,7 +2161,8 @@
     "website_link": "",
     "github_link": "https://github.com/salesforce/LAVIS/tree/main/projects/blip2",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "salesforce_logo.png"
   },
   {
     "name": "LLaMA-Adapter",
@@ -2135,7 +2180,8 @@
     "website_link": "",
     "github_link": "https://github.com/OpenGVLab/LLaMA-Adapter",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "OpenGVLab_logo.png"
   },
   {
     "name": "LLaVA",
@@ -2153,7 +2199,8 @@
     "website_link": "https://llava-vl.github.io/",
     "github_link": "https://github.com/haotian-liu/LLaVA",
     "huggingface_link": "https://huggingface.co/spaces/badayvedat/LLaVA",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "haotian-liu_logo.png"
   },
   {
     "name": "MiniGPT4",
@@ -2171,7 +2218,8 @@
     "website_link": "https://minigpt-4.github.io/",
     "github_link": "https://github.com/Vision-CAIR/MiniGPT-4",
     "huggingface_link": "https://huggingface.co/spaces/Vision-CAIR/minigpt4",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Vision-CAIR_logo.png"
   },
   {
     "name": "OpenFlamingo",
@@ -2189,7 +2237,8 @@
     "website_link": "https://laion.ai/blog/open-flamingo-v2/",
     "github_link": "https://github.com/mlfoundations/open_flamingo",
     "huggingface_link": "https://huggingface.co/openflamingo",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "Otter",
@@ -2207,7 +2256,8 @@
     "website_link": "",
     "github_link": "https://github.com/Luodian/Otter",
     "huggingface_link": "https://huggingface.co/spaces/Otter-AI/OtterHD-Demo",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Luodian_logo.png"
   },
   {
     "name": "peft",
@@ -2226,7 +2276,8 @@
     "website_link": "",
     "github_link": "https://github.com/huggingface/peft",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "trl",
@@ -2245,7 +2296,8 @@
     "website_link": "",
     "github_link": "https://github.com/huggingface/trl",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "trlX",
@@ -2264,7 +2316,8 @@
     "website_link": "https://trlx.readthedocs.io/en/latest/",
     "github_link": "https://github.com/CarperAI/trlx",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "CarperAI_logo.png"
   },
   {
     "name": "Levanter",
@@ -2282,10 +2335,11 @@
     "website_link": "https://crfm.stanford.edu/2023/06/16/levanter-1_0-release.html",
     "github_link": "https://github.com/stanford-crfm/levanter",
     "huggingface_link": "https://huggingface.co/stanford-crfm",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
   },
   {
-    "name": "AI Licensing Can’t Balance “Open” with “Responsible”",
+    "name": "AI Licensing Can\u2019t Balance \u201cOpen\u201d with \u201cResponsible\u201d",
     "description": "A blog post by an IP lawyer arguing against responsible use licensing",
     "modalities": [
       "Text",
@@ -2451,7 +2505,8 @@
     "website_link": "https://choosealicense.com/",
     "github_link": "https://github.com/github/choosealicense.com/tree/gh-pages",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "github_logo.png"
   },
   {
     "name": "Create Commons License Chooser",
@@ -2641,7 +2696,8 @@
     "website_link": "https://crfm.stanford.edu/fmti/",
     "github_link": "https://github.com/stanford-crfm/fmti",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "stanford-crfm_logo.png"
   },
   {
     "name": "Model Card Resources",
@@ -2715,7 +2771,8 @@
     "website_link": "https://commoncrawl.org",
     "github_link": "https://github.com/google-research/text-to-text-transfer-transformer#c4",
     "huggingface_link": "https://huggingface.co/datasets/allenai/c4",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
   },
   {
     "name": "Common Voice",
@@ -2767,7 +2824,8 @@
     "website_link": "https://www.datacomp.ai/",
     "github_link": "https://github.com/mlfoundations/datacomp",
     "huggingface_link": "https://huggingface.co/datasets/mlfoundations/datacomp_1b",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "Dolma",
@@ -2784,7 +2842,8 @@
     "website_link": "",
     "github_link": "https://github.com/allenai/dolma",
     "huggingface_link": "https://huggingface.co/datasets/allenai/dolma",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
   },
   {
     "name": "GigaSpeech",
@@ -2801,7 +2860,8 @@
     "website_link": "",
     "github_link": "https://github.com/SpeechColab/GigaSpeech",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "SpeechColab_logo.png"
   },
   {
     "name": "Golos",
@@ -2818,7 +2878,8 @@
     "website_link": "https://www.openslr.org/114/",
     "github_link": "https://github.com/sberdevices/golos",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "sberdevices_logo.png"
   },
   {
     "name": "IndicCorp v2",
@@ -2835,7 +2896,8 @@
     "website_link": "",
     "github_link": "https://github.com/AI4Bharat/IndicBERT/tree/main#indiccorp-v2",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "AI4Bharat_logo.png"
   },
   {
     "name": "IndicSUPERB",
@@ -2869,7 +2931,8 @@
     "website_link": "",
     "github_link": "https://github.com/facebookresearch/libri-light",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
   },
   {
     "name": "LibriSpeech",
@@ -2903,7 +2966,8 @@
     "website_link": "",
     "github_link": "https://github.com/google-research/google-research/tree/master/madlad_400",
     "huggingface_link": "https://huggingface.co/datasets/allenai/MADLAD-400",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "google-research_logo.png"
   },
   {
     "name": "mC4",
@@ -2938,7 +3002,8 @@
     "website_link": "",
     "github_link": "https://github.com/allenai/mmc4",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
   },
   {
     "name": "OBELICS",
@@ -2956,7 +3021,8 @@
     "website_link": "https://huggingface.co/blog/idefics",
     "github_link": "https://github.com/huggingface/OBELICS",
     "huggingface_link": "https://huggingface.co/datasets/HuggingFaceM4/OBELICS",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "OLC",
@@ -2973,7 +3039,8 @@
     "website_link": "",
     "github_link": "https://github.com/kernelmachine/silo-lm#download-data",
     "huggingface_link": "https://huggingface.co/datasets/kernelmachine/open-license-corpus",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "kernelmachine_logo.png"
   },
   {
     "name": "OpenWebMath",
@@ -2990,7 +3057,8 @@
     "website_link": "",
     "github_link": "https://github.com/keirp/OpenWebMath",
     "huggingface_link": "https://huggingface.co/datasets/open-web-math/open-web-math",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "keirp_logo.png"
   },
   {
     "name": "OPUS",
@@ -3045,7 +3113,7 @@
   },
   {
     "name": "Pile of Law",
-    "description": "An open-source, English dataset with ∼256GB of legal and administrative data, covering court opinions, contracts, administrative rules, and legislative records.",
+    "description": "An open-source, English dataset with \u223c256GB of legal and administrative data, covering court opinions, contracts, administrative rules, and legislative records.",
     "modalities": [
       "Text"
     ],
@@ -3075,7 +3143,8 @@
     "website_link": "https://www.together.ai/blog/redpajama-data-v2",
     "github_link": "https://github.com/togethercomputer/RedPajama-Data",
     "huggingface_link": "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "togethercomputer_logo.png"
   },
   {
     "name": "ROOTS",
@@ -3092,10 +3161,11 @@
     "website_link": "https://bigscience.huggingface.co/",
     "github_link": "https://github.com/bigscience-workshop/bigscience/tree/master/data",
     "huggingface_link": "https://huggingface.co/bigscience-data",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "bigscience-workshop_logo.png"
   },
   {
-    "name": "Samrómur",
+    "name": "Samr\u00f3mur",
     "description": "2,200 hour crowd-sourced corpus of Icelandic speech",
     "modalities": [
       "Speech"
@@ -3129,7 +3199,7 @@
     "added_by": "Original Authors"
   },
   {
-    "name": "The People’s Speech",
+    "name": "The People\u2019s Speech",
     "description": "30k hour conversational English dataset",
     "modalities": [
       "Speech"
@@ -3177,7 +3247,8 @@
     "website_link": "https://blog.eleuther.ai/llemma/",
     "github_link": "https://github.com/EleutherAI/math-lm",
     "huggingface_link": "https://huggingface.co/datasets/EleutherAI/proof-pile-2",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
   },
   {
     "name": "The RefinedWeb",
@@ -3211,7 +3282,8 @@
     "website_link": "https://www.bigcode-project.org/docs/about/the-stack/#datasets-and-data-governance-tools-released-by-bigcode",
     "github_link": "https://github.com/bigcode-project/bigcode-dataset",
     "huggingface_link": "https://huggingface.co/datasets/bigcode/the-stack",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "bigcode-project_logo.png"
   },
   {
     "name": "VoxPopuli",
@@ -3228,7 +3300,8 @@
     "website_link": "",
     "github_link": "https://github.com/facebookresearch/voxpopuli",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
   },
   {
     "name": "WebVid-10M",
@@ -3246,7 +3319,8 @@
     "website_link": "https://maxbain.com/webvid-dataset/",
     "github_link": "https://github.com/m-bain/webvid",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "m-bain_logo.png"
   },
   {
     "name": "WenetSpeech",
@@ -3263,7 +3337,8 @@
     "website_link": "https://www.openslr.org/121/",
     "github_link": "https://github.com/wenet-e2e/WenetSpeech",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "wenet-e2e_logo.png"
   },
   {
     "name": "WURA",
@@ -3299,7 +3374,8 @@
     "website_link": "",
     "github_link": "https://github.com/webdataset/webdataset",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "webdataset_logo.png"
   },
   {
     "name": "Multi Legal Pile",
@@ -3333,7 +3409,8 @@
     "website_link": "",
     "github_link": "https://github.com/EleutherAI/gpt-neox",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "EleutherAI_logo.png"
   },
   {
     "name": "Kosmos-2",
@@ -3351,7 +3428,8 @@
     "website_link": "",
     "github_link": "https://github.com/microsoft/unilm/tree/master/kosmos-2",
     "huggingface_link": "https://huggingface.co/spaces/ydshieh/Kosmos-2",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "microsoft_logo.png"
   },
   {
     "name": "Lhotse",
@@ -3385,7 +3463,8 @@
     "website_link": "",
     "github_link": "https://github.com/microsoft/Megatron-DeepSpeed",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "microsoft_logo.png"
   },
   {
     "name": "Megatron-LM",
@@ -3402,7 +3481,8 @@
     "website_link": "",
     "github_link": "https://github.com/NVIDIA/Megatron-LM",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "NVIDIA_logo.png"
   },
   {
     "name": "OpenCLIP",
@@ -3420,7 +3500,8 @@
     "website_link": "",
     "github_link": "https://github.com/mlfoundations/open_clip",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "OpenLM",
@@ -3437,7 +3518,8 @@
     "website_link": "",
     "github_link": "https://github.com/mlfoundations/open_lm",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "mlfoundations_logo.png"
   },
   {
     "name": "Pytorch Image Models (timm)",
@@ -3454,7 +3536,8 @@
     "website_link": "",
     "github_link": "https://github.com/huggingface/pytorch-image-models",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "Stable Audio Tools",
@@ -3471,7 +3554,8 @@
     "website_link": "",
     "github_link": "https://github.com/Stability-AI/stable-audio-tools",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Stability-AI_logo.png"
   },
   {
     "name": "Bias Benchmark for QA (BBQ)",
@@ -3488,7 +3572,8 @@
     "website_link": "",
     "github_link": "https://github.com/nyu-mll/BBQ",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "nyu-mll_logo.png"
   },
   {
     "name": "Crossmodal-3600",
@@ -3523,7 +3608,8 @@
     "website_link": "",
     "github_link": "https://github.com/nayeon7lee/FactualityPrompt",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "nayeon7lee_logo.png"
   },
   {
     "name": "From text to talk",
@@ -3574,7 +3660,8 @@
     "website_link": "https://ai.meta.com/research/publications/im-sorry-to-hear-that-finding-new-biases-in-language-models-with-a-holistic-descriptor-dataset/",
     "github_link": "https://github.com/facebookresearch/ResponsibleNLP/tree/main/holistic_bias",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
   },
   {
     "name": "Purple Llama CyberSecEval",
@@ -3591,7 +3678,8 @@
     "website_link": "https://ai.meta.com/research/publications/purple-llama-cyberseceval-a-benchmark-for-evaluating-the-cybersecurity-risks-of-large-language-models/",
     "github_link": "https://github.com/facebookresearch/PurpleLlama/tree/main/CybersecurityBenchmarks",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
   },
   {
     "name": "Purple Llama Guard",
@@ -3608,7 +3696,8 @@
     "website_link": "https://ai.meta.com/research/publications/llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations/",
     "github_link": "https://github.com/facebookresearch/PurpleLlama/tree/main/Llama-Guard",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "facebookresearch_logo.png"
   },
   {
     "name": "Racial disparities in automated speech recognition",
@@ -3642,7 +3731,8 @@
     "website_link": "https://toxicdegeneration.allenai.org/",
     "github_link": "https://github.com/allenai/real-toxicity-prompts",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "allenai_logo.png"
   },
   {
     "name": "Red Teaming LMs with LMs",
@@ -3695,7 +3785,8 @@
     "website_link": "",
     "github_link": "https://github.com/bertiev/SimpleSafetyTests",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "bertiev_logo.png"
   },
   {
     "name": "SneakyPrompt",
@@ -3712,7 +3803,8 @@
     "website_link": "",
     "github_link": "https://github.com/Yuchen413/text2image_safety",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "Yuchen413_logo.png"
   },
   {
     "name": "StableBias",
@@ -3767,7 +3859,8 @@
     "website_link": "",
     "github_link": "https://github.com/artidoro/qlora",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "artidoro_logo.png"
   },
   {
     "name": "Scaling Data-Constrained Language Models",
@@ -3784,7 +3877,8 @@
     "website_link": "",
     "github_link": "https://github.com/huggingface/datablations",
     "huggingface_link": "https://huggingface.co/datablations",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "Training Compute-Optimal Language Models",
@@ -3913,7 +4007,8 @@
     "website_link": "",
     "github_link": "https://github.com/DAI-Lab/RivaGAN",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "DAI-Lab_logo.png"
   },
   {
     "name": "Robust Distortion-free Watermarks for Language Models",
@@ -3949,7 +4044,8 @@
     "website_link": "",
     "github_link": "https://github.com/openai/moderation-api-release",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "openai_logo.png"
   },
   {
     "name": "Perspective API",
@@ -4112,7 +4208,8 @@
     "website_link": "",
     "github_link": "https://github.com/thu-coai/Safety-Prompts",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "thu-coai_logo.png"
   },
   {
     "name": "DECODINGTRUST: A Comprehensive Assessment of Trustworthiness in GPT Models",
@@ -4541,7 +4638,8 @@
     "website_link": "https://blogs.nvidia.com/blog/ai-chatbot-guardrails-nemo/",
     "github_link": "https://github.com/NVIDIA/NeMo-Guardrails",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "NVIDIA_logo.png"
   },
   {
     "name": "SafetyPrompts",
@@ -4577,7 +4675,8 @@
     "website_link": "",
     "github_link": "https://github.com/leondz/lm_risk_cards",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "leondz_logo.png"
   },
   {
     "name": "Aya Dataset",
@@ -4630,7 +4729,8 @@
     "website_link": "",
     "github_link": "https://github.com/dadelani/sib-200",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "dadelani_logo.png"
   },
   {
     "name": "French-PD-Newpapers",
@@ -4664,7 +4764,8 @@
     "website_link": "",
     "github_link": "https://github.com/huggingface/datatrove",
     "huggingface_link": "",
-    "added_by": "Original Authors"
+    "added_by": "Original Authors",
+    "logo": "huggingface_logo.png"
   },
   {
     "name": "Nomic",

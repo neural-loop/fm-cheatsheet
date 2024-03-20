@@ -3,20 +3,21 @@
 <ul class="list-none p-0">
   {{ range $index, $entry := $jsonData }}
   <li class="flex items-start mb-6 bg-white dark:bg-slate-900 p-4 rounded">
-    {{ if $entry.logo_path }}
-    <img src="{{ $entry.logo_path }}" alt="{{ $entry.name }}" class="bg-white mr-4 mt-4 w-16 h-16 rounded-full">
+    {{ if $entry.logo }}
+    <img src="/images/gh-icons/{{ $entry.logo }}" alt="{{ $entry.name }}" class="bg-white mr-4 mt-4 w-16 h-16 rounded-full">
     {{ else }}
     {{ if eq $entry.primary_link "GitHub" }}
     <img src="/images/resource-icons/github.png" alt="{{ $entry.name }}"
          class="bg-white mr-4 mt-4 w-16 h-16 rounded-full">
     {{ else if eq $entry.primary_link "Paper" }}
-    <img src="/images/resource-icons/paper.png" alt="{{ $entry.name }}"
-         class="bg-white mr-4 mt-4 w-16 h-16 rounded-full">
+    <img src="/images/resource-icons/paper-light.png" alt="{{ $entry.name }}"
+         class="mr-4 mt-4 w-16 h-16 dark:invert rounded-full">
+
     {{ else if eq $entry.primary_link "Webpage" }}
-    <img src="/images/resource-icons/web.png" alt="{{ $entry.name }}" class="bg-white mr-4 mt-4 w-16 h-16 rounded-full">
+    <img src="/images/resource-icons/web-light.png" alt="{{ $entry.name }}" class="dark:invert mr-4 mt-4 w-16 h-16 rounded-full">
     {{ else if eq $entry.primary_link "Hugging Face object" }}
-    <img src="/images/resource-icons/huggingface.png" alt="{{ $entry.name }}"
-         class="bg-white mr-4 mt-4 w-16 h-16 rounded-full">
+    <img src="/images/resource-icons/huggingface-light.png" alt="{{ $entry.name }}"
+         class="dark:inverse mr-4 mt-4 w-16 h-16 rounded-full">
     {{ end }}
     {{ end }}
 
