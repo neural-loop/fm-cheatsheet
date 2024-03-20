@@ -47,9 +47,8 @@
       {{ end }}
       {{ with $entry.github_link }}
       {{ $githubUrlParts := split . "/" }}
-      {{ $githubUrlLen := len $githubUrlParts }}
-      {{ if and (eq $githubUrlLen 5) (eq (index $githubUrlParts 0) "https:") (eq (index $githubUrlParts 1) "") (eq
-      (index $githubUrlParts 2) "github.com") }}
+      {{ if and (ge (len $githubUrlParts) 5) (eq (index $githubUrlParts 0) "https:") (eq (index $githubUrlParts 1) "")
+      (eq (index $githubUrlParts 2) "github.com") }}
       {{ $username := index $githubUrlParts 3 }}
       {{ $repository := index $githubUrlParts 4 }}
 
@@ -67,6 +66,7 @@
                                                            rel="nofollow noopener noreferrer">GitHub</a><br>
       {{ end }}
       {{ end }}
+
       {{ with $entry.website_link }}
       <i class="fas fa-globe mr-2 fa-lg"></i><a href="{{ . }}" class="hover:underline" target="_blank"
                                                 rel="nofollow noopener noreferrer">Website</a><br>
