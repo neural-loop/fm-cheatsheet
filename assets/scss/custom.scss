@@ -3,28 +3,22 @@ body {
   scroll-padding-top: 120px;
 }
 .header-solid {
-  background-color: #725c51;
+  background-color: #47dacd;
 }
 
-//@media (min-width: 540px) {
-//  .container {
-//    max-width: 100%;
-//  }
-//}
-
 .dark .header-solid {
-  background-color: #24150d;
+  background-color: #03151f;
 
 }
 .header {
   padding-top: .5rem !important;
   padding-bottom: .5rem !important;
-  background-color: rgba(220, 210, 206, 0.58) !important; /* 50% opacity white background */
+  background-color: #47dacd99 !important; /* 50% opacity white background */
   box-shadow:0 6px 14px rgba(0, 0, 0, 0.5); /* Slight drop shadow */
   backdrop-filter: blur(20px) invert(0%);
 }
 .dark .header {
-    background-color: rgba(115, 93, 81, 0.53) !important; /* 50% opacity white background */
+    background-color: #008391bf !important; /* 50% opacity white background */
 }
 
 html {
@@ -162,58 +156,6 @@ nav#TableOfContents {
 
 section:nth-of-type(2) {
   padding-top: 2rem !important;
-}
-
-.audio-container {
-  position: relative;
-  background-color: #96a4ab; /* Shaded background color */
-  width: 100%;
-  max-width: 700px; /* Set a maximum width if needed */
-  margin-bottom: 16px;
-
-  &.expanded {
-    height: 276px;
-  }
-
-  .artistname {
-    display: block;
-    font-size: 4em;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    color: rgb(255, 255, 255);
-    mix-blend-mode: color-dodge; /* Blend mode for inverting colors */
-  }
-
-  a {
-    position: absolute;
-    top: 7px;
-    right: -7px;
-    padding-right: 5px;
-  }
-
-  audio {
-    position: absolute;
-    bottom: 15px;
-    left: 5%;
-    width: 90%;
-  }
-
-  audio.player2 {
-    position: absolute;
-    bottom: 75px;
-    left: 5%;
-    width: 90%;
-  }
-
-  audio.player3 {
-    position: absolute;
-    bottom: 135px;
-    left: 5%;
-    width: 90%;
-  }
 }
 
 .nav-dropdown-list {

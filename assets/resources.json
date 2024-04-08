@@ -2023,7 +2023,7 @@
   },
   {
     "name": "MS COCO",
-    "description": "Object detection, segemndation, captioning and retrieval dataset",
+    "description": "Object detection, segmentation, captioning and retrieval dataset",
     "modalities": [
       "Text",
       "Vision"
@@ -2182,6 +2182,23 @@
     "huggingface_link": "",
     "added_by": "Original Authors",
     "logo": "OpenGVLab_logo.png"
+  },
+  {
+    "name": "LLaMA-Factory",
+    "description": "A framework for efficiently fine-tuning LLMs using cutting-edge algorithms with a user-friendly web UI",
+    "modalities": [
+      "Text"
+    ],
+    "categories": [
+      "Model Training: Finetuning Repositories"
+    ],
+    "date": "Frequently Updated",
+    "primary_link": "GitHub",
+    "paper_link": "https://arxiv.org/abs/2403.13372",
+    "website_link": "",
+    "github_link": "https://github.com/hiyouga/LLaMA-Factory",
+    "huggingFace_link": "",
+    "added_by": "Original Authors"
   },
   {
     "name": "LLaVA",
