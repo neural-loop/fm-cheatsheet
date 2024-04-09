@@ -1,20 +1,20 @@
-<div class="header-solid pb-2 pt-2">
-    <div class="container  justify-end flex">
-    <ul class="social-icons hidden sm:hidden md:block">
-      {{ range site.Data.social.main }}
-        <li>
-          <a
-            target="_blank"
-            aria-label="{{ .name }}"
-            rel="nofollow noopener"
-            href="{{ .link | safeURL }}">
-            <i class="{{ .icon }}"></i>
-          </a>
-        </li>
-      {{ end }}
-    </ul>
-  </div>
-</div>
+<!--<div class="header-solid pb-2 pt-2">-->
+<!--    <div class="container  justify-end flex">-->
+<!--    <ul class="social-icons hidden sm:hidden md:block">-->
+<!--      {{ range site.Data.social.main }}-->
+<!--        <li>-->
+<!--          <a-->
+<!--            target="_blank"-->
+<!--            aria-label="{{ .name }}"-->
+<!--            rel="nofollow noopener"-->
+<!--            href="{{ .link | safeURL }}">-->
+<!--            <i class="{{ .icon }}"></i>-->
+<!--          </a>-->
+<!--        </li>-->
+<!--      {{ end }}-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</div>-->
 <header
   class="header {{ if site.Params.navbar_fixed }}md:sticky top-0{{ end }} z-30">
   <nav class="navbar container">

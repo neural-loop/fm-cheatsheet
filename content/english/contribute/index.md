@@ -1,6 +1,6 @@
 ---
 title: "Contribute"
-description: "Foundation Models Cheet Sheet"
+description: "Foundation Models Cheat Sheet"
 ---
 
 ## Add to Cheatsheet

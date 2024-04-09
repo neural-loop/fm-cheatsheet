@@ -2,6 +2,7 @@ html,
 body {
   scroll-padding-top: 120px;
 }
+
 .header-solid {
   background-color: #47dacd;
 }
@@ -13,12 +14,14 @@ body {
 .header {
   padding-top: .5rem !important;
   padding-bottom: .5rem !important;
-  background-color: #47dacd99 !important; /* 50% opacity white background */
   box-shadow:0 6px 14px rgba(0, 0, 0, 0.5); /* Slight drop shadow */
   backdrop-filter: blur(20px) invert(0%);
 }
-.dark .header {
-    background-color: #008391bf !important; /* 50% opacity white background */
+.header, footer .tail {
+  background-color: #47dacd99 !important;
+}
+.dark .header, .dark footer .tail {
+    background-color: #008391bf !important;
 }
 
 html {

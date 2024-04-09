@@ -10,21 +10,38 @@ name = "Browse Resources"
 url = "/foundation-model-resources/"
 weight = 2
 
+
 [[main]]
+name = "Get Involved"
+
+[[main]]
+parent = "Get Involved"
 name = "Contribute"
 url = "/contribute/"
-weight = 3
+weight = 1
+
+[[main]]
+parent = "Get Involved"
+name = "View Contributors"
+url = "/contributors/"
+weight = 2
+
 
 # footer menu
 [[footer]]
-name = "Home"
+name = "Get Involved"
 haschildren = true
 weight = 1
 
 [[footer]]
-parent = "Home"
+parent = "Get Involved"
 name = "Contribute"
 url = "/contribute/"
+
+[[footer]]
+parent = "Get Involved"
+name = "Contributors"
+url = "/contributors/"
 
 [[footer]]
 name = "Data Sources"
