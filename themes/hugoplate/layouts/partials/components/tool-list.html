@@ -2,7 +2,7 @@
 {{ $jsonData := where $data "categories" "intersect" (.Params.short_name | slice) }}
 <ul class="list-none p-0">
   {{ range $index, $entry := $jsonData }}
-  <li class="flex items-start mb-6 bg-white dark:bg-slate-900 p-4 rounded">
+  <li class="flex items-start mb-6 bg-white dark:bg-slate-900 p-4 pt-2 rounded">
     {{ if $entry.logo }}
     <img src="/images/gh-icons/{{ $entry.logo }}" alt="{{ $entry.name }}"
          class="bg-white mr-5 ml-2 mt-4 w-16 h-16 rounded-full">
@@ -35,7 +35,7 @@
     {{ end }}
   </h3>
 
-  <p>{{ $entry.description | markdownify }}</p>
+  <p class="mb-1">{{ $entry.description | markdownify }}</p>
 
   {{ with $entry.license }}
   <p>License: {{ . }}</p>
