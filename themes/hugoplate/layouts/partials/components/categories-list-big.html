@@ -1,0 +1,45 @@
+<div class="bg-theme-light bg-green-400 rounded p-8">
+  <ul class="space-y-4">
+    {{ $sections := getJSON "assets/sections.json" }}
+    {{ range $sections.sections }}
+      <li>
+        <h3 class="mb-2 px-0 py-0 pr-1 rounded">{{ .name }}</h3>
+        <ul class="space-y-4">
+          {{ $section := . }}
+          <!-- Collect matching pages into a slice -->
+          {{ $matchingPages := slice }}
+          {{ range where $.Site.RegularPages "Section" "foundation-model-resources" }}
+            {{ $sectionID := .Params.section_id | int }}
+            {{ $sectionNumber := $section.number | int }}
+            {{ if eq $sectionID $sectionNumber }}
+              {{ $matchingPages = $matchingPages | append . }}
+            {{ end }}
+          {{ end }}
+          <!-- Sort the slice by section_id -->
+          {{ $sortedPages := sort $matchingPages "Params.section_id" "asc" }}
+          {{ range $sortedPages }}
+            <!-- Display content for matching pages -->
+            <li class="flex items-center justify-between">
+              <a class="hover:text-primary dark:hover:text-darkmode-primary flex items-baseline ml-4"
+                 href="{{ .Permalink }}" style="min-width: 150px;">
+                {{ partial "image" (dict "Src" .Params.image "Context" .Page
+                "Alt" .Title "Size" "60x34" "Command" "Fit" "Class" "m-0 p-0") }}
+                <div class="flex flex-col">
+                  <p class="text-lg pl-6">{{ .Params.short_name }}</p>
+                  <p>{{ .Description }}</p> <!-- Description on a new line -->
+                </div>
+              </a>
+              {{ $data := getJSON "assets/resources.json" }}
+              {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+              {{ $entryCount := len $filteredData }}
+              <span
+                class="dark:bg-slate-700 dark:text-white bg-gray-300 font-bold text-center text-black px-2 py-1 rounded-lg"
+                style="min-width: 40px">{{ $entryCount }}</span> <!-- Align count to the right -->
+            </li>
+            <!-- Add more content display as needed -->
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
+  </ul>
+</div>

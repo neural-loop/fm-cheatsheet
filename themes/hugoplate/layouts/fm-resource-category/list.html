@@ -24,26 +24,7 @@
   <div class="container">
     <div class="row gx-5">
       <div class="lg:col-8">
-        <div class="row">
-          <h2 class="pb-4">Foundation Model Resource Categories</h2>
-          {{ range sort .RegularPages "Params.section_id" }}
-          {{ if eq .Params.highlight true }}
-          <div class="col-6 pb-5">
-            <a href="{{ .Permalink }}">
-              {{ if .Params.image }}
-              {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "pb-2 w-full rounded"
-              "Size" "800x320" "Command" "Fit") }}
-              {{ end }}
-              <h3>{{ .Params.short_name }}</h3>
-              {{ .Description }}
-            </a>
-          </div>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-      <div class="lg:col-4">
-        {{ partial "components/categories-list" . }}
+        {{ partial "components/categories-list-big" . }}
       </div>
     </div>
   </div>
@@ -56,14 +37,14 @@
         <h2 class="mb-8 text-3xl font-semibold">Frequently Asked Questions (FAQ)</h2>
       </div>
       <div class="lg:col-12">
-        <div class="accordion">
           {{ if eq .Paginator.PageNumber 1 }}
           {{ with .File }}
           {{ $jsonFile := printf "%s.json" (path.Join .Dir .BaseFileName) }}
           {{ if (fileExists $jsonFile) }}
           {{ $jsonData := readFile $jsonFile | transform.Unmarshal }}
           {{ range $index, $faq := $jsonData.mainEntity }}
-          <!-- FAQ Item {{ add $index 1 }} -->
+                <div class="accordion">
+
           <button class="accordion-header" data-accordion>
             {{ $faq.name }}
             <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
@@ -74,6 +55,7 @@
           <div class="accordion-content">
             <p class="px-5 pb-5">{{ $faq.acceptedAnswer.text | markdownify }}</p>
           </div>
+                  </div>
           {{ end }}
           {{ end }}
           {{ end }}
