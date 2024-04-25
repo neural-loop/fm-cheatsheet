@@ -8,14 +8,12 @@
         <center>
           <div class="rounded-tl-full border-2 bg-white border-white p-6">
             {{ partial "image" (dict "Src" "/images/img.png" "Class" "rounded-xl" "Loading" "eager" "Alt" "feature image" "Size" "200x200" "Command" "Fit") }}
-            <a class="btn btn-primary btn-outline-primary mt-4" href="/foundation-model-resources/"><i
-              class="fa fa-square-caret-right pr-2 text-xl"></i>
-              Browse Resources</a>
           </div>
         </center>
       </div>
       <div class="md:col-8">
-        <h1 class="mb-8 mt-4 text-xl font-normal">For Foundation Model Developers, By Foundation Model Developers</h1>
+        <h1 class="mb-8 mt-4 text-xl font-normal"> <b>good practices</b>, <b>awareness of
+          limitations</b>, and <b>general responsible habits</b></h1>
         <p class="mb-4 text-lg">
           As the field of AI foundation model development rapidly expands, welcoming new
           contributors, scientists, and applications, we hope to lower the barrier for new community members to become
@@ -32,35 +30,42 @@
       </article>
     </div>
     <div class="row pt-6 gx-5">
-      <div class="lg:col-8">
-        <div class="row">
-          <div>
-          <div class="rounded bg-white p-4">
-            {{ partial "gallery.html" (dict "Dir" "/images/home/" "Class" "p-4 pb-0")}}
-            This cheatsheet serves as a succinct guide, prepared by foundation model developers for foundation model
-          developers.<br>
-            <a class="btn btn-primary mt-6 mb-2" href="foundation-model-development-cheatsheet.pdf"><i
-              class="fa fa-file pr-2"></i>
-              Download Cheatsheet</a>
-          </div>
-            </div>
-          <h2 class="pb-4 pt-6">Development Insights & Best Practices</h2>
-          <div>
-            <div class="bg-white p-4 mt-2 mb-6">
-              <div class="notice-head">
-                <i class="fas fa-exclamation-circle pr-1"></i>
-                <p> Note </p>
-              </div>
-              <div class="notice-body">
-                <p>These are the different parts of the AI development process, and we have a corresponding cheatsheet
-                  section on each.</p>
-              </div>
-            </div>
-          </div>
 
-          <div>{{ partial "components/section-details.html" . }}</div>
+<div class="lg:col-8">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="pb-6 pt-4">Foundation Model Training Flowchart</h2>
+
+      <div class="rounded bg-white p-4">
+        {{ partial "gallery.html" (dict "Dir" "/images/home/" "Class" "p-4 pb-0")}}
+        This cheatsheet serves as a succinct guide, prepared by foundation model developers for foundation model developers.<br>
+        <div class="flex justify-end mr-2"> <!-- Use Tailwind's flex utilities -->
+          <a class="btn btn-primary mt-6 mb-2" href="foundation-model-development-cheatsheet.pdf"><i
+              class="fa fa-file pr-2"></i>
+            Download Cheatsheet</a>
+          <a class="btn btn-primary mt-6 mb-2 ml-4" href="/foundation-model-resources/"><i
+              class="fa fa-square-caret-right pr-2 text-xl"></i>
+            Browse Resources</a>
         </div>
       </div>
+    </div>
+    <h2 class="pb-4 pt-6">Development Insights & Best Practices</h2>
+    <div>
+      <div class="bg-white p-4 mt-2 mb-6">
+        <div class="notice-head">
+          <i class="fas fa-exclamation-circle pr-1"></i>
+          <p> Note </p>
+        </div>
+        <div class="notice-body">
+          <p>These are the different parts of the AI development process, and we have a corresponding cheatsheet section on each.</p>
+        </div>
+      </div>
+    </div>
+
+    <div>{{ partial "components/section-details.html" . }}</div>
+  </div>
+</div>
+
       <div class="lg:col-4">
         {{ partial "components/categories-list" . }}
       </div>
