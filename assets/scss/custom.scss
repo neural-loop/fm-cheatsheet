@@ -81,7 +81,7 @@ address {
 
   ul li,
   article .content ul li {
-    font-size: 1.2em !important;
+    //font-size: 1.2em !important;
   }
 
   :is(:where(p):not(:where([class~="not-prose"] *))) {
@@ -92,6 +92,13 @@ address {
     font-size: 1.05em;
     line-height: 1.4285714;
     margin-top: 0.471429em;
+  }
+
+  .social-icons img {
+    margin-bottom: 2em;
+  }
+  .social-icons a {
+    text-decoration: none;
   }
 }
 
