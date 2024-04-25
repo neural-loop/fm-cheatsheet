@@ -4,7 +4,7 @@ body {
 }
 
 .header-solid {
-  background-color: #47dacd;
+  background-color: #6fa8dc;
 }
 
 .dark .header-solid {
@@ -18,7 +18,7 @@ body {
   backdrop-filter: blur(20px) invert(0%);
 }
 .header, footer .tail {
-  background-color: #47dacd99 !important;
+  background-color: rgba(130, 171, 220, 0.51) !important;
 }
 .dark .header, .dark footer .tail {
     background-color: #008391bf !important;
