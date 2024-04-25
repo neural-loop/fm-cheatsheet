@@ -2,7 +2,7 @@
 {{ $sections := getJSON "assets/sections.json" }}
 
 {{ range $index, $section := $sections.sections }}
-  <div class="accordion  {{ if lt $index 2 }}active{{ end }}">
+  <div class="accordion">
     <button class="accordion-header" data-accordion>
       {{ $section.name }}
       <svg class="accordion-icon" x="0px" y="0px" viewBox="0 0 512 512" xmlspace="preserve">
