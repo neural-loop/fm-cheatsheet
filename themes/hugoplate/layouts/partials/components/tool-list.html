@@ -45,7 +45,7 @@
     <ul class="social-icons">
       {{ with $entry.paper_link }}
       <li>
-        <a href="{{ . }}" target="_blank" rel="nofollow noopener noreferrer">
+        <a class="mt-2" href="{{ . }}" target="_blank" rel="nofollow noopener noreferrer">
           <span class="sr-only">Download Paper</span>
           <i class="fas fa-file-alt icon"></i>
         </a>
@@ -53,10 +53,10 @@
       {{ end }}
 
       {{ with $entry.huggingface_link }}
-      <li class="" style="inline-grid">
+      <li style="vertical-align: bottom">
         <a href="{{ . }}" target="_blank"  rel="nofollow noopener noreferrer">
           <span class="sr-only">Hugging Face</span>
-          <img src="/images/resource-icons/huggingface.png" alt="Hugging Face" style="width:26px;">
+          <img src="/images/resource-icons/huggingface.png" alt="Hugging Face" style="width:26px; padding:0; margin:0;">
         </a>
       </li>
       {{ end }}
