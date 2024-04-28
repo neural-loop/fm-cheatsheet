@@ -18,7 +18,7 @@ To create this cheatsheet, a variety of contributors provided resources, papers,
 * **Model Documentation:** Sayash Kapoor, Shayne Longpre
 * **Pretraining Repositories:** Stella Biderman, Gabriel Ilharco, Nay San, Hailey Schoelkopf 
 * **Reproducibility:** Stella Biderman, Shayne Longpre
-* **Risks & Harms:** Maribeth Rauh, Laura Weidinger
+* **Risks & Harms:** Maribeth Rauh, Laura Weidinger, Bertie Vidgen
 * **Usage Monitoring:** Kevin Klyman 
 * **Website:** Shayne Longpre, Luca Soldaini, Justin Riddiough
 
