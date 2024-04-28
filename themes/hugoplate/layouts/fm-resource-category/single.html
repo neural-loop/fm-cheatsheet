@@ -10,7 +10,7 @@
       class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light rounded-2xl bg-gradient-to-b px-8
         pt-12 pb-6">
       <h1>{{ $entryCount }} {{ .Title | title }}</h1>
-      <p>{{ .Description }}</p>
+<!--      <p>{{ .Description }}</p>-->
       <p>{{ .Content }}</p>
       <div class="mt-6 flex items-end justify-between">
         {{ partial "components/breadcrumb" (dict "Context" . "Class" "align-text-bottom") }}
@@ -40,7 +40,7 @@
 <section class="section pt-7">
   <div class="container">
     <div class="row justify-center">
-      <article class="lg:col-8">
+      <article class="xl:col-8">
         <div class="content mb-10">
           <div class="flex justify-between items-center">
             <h2 class="pb-2">{{ .Params.short_name }}</h2>
@@ -52,9 +52,7 @@
           {{ partial "components/tool-list" . }}
         </div>
       </article>
-
-
-      <div class="lg:col-4">
+      <div class="xl:col-4">
         <div class="text-center">
           <p>~ Share Page ~</p>
           {{ partial "social-share" (dict "Context" . "Class" "pb-4 share-icons" "Title" (i18n "") "Whatsapp" true
