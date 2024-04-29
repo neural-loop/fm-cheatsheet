@@ -10,6 +10,53 @@ name = "Browse Resources"
 url = "/foundation-model-resources/"
 weight = 2
 
+[[main]]
+parent = "Browse Resources"
+name = "Data Sources"
+url = "/foundation-model-resources/#data-sources"
+weight = 1
+
+[[main]]
+parent = "Browse Resources"
+name = "Data Preparation"
+url = "/foundation-model-resources/#data-preparation"
+weight = 2
+
+[[main]]
+parent = "Browse Resources"
+name = "Model Training"
+url = "/foundation-model-resources/#model-training"
+weight = 4
+
+[[main]]
+parent = "Browse Resources"
+name = "Data Documentation & Release"
+url = "/foundation-model-resources/#data-documentation-and-release"
+weight = 3
+
+
+
+[[main]]
+parent = "Browse Resources"
+name = "Environmental Impact"
+url = "/foundation-model-resources/#environmental-impact"
+weight = 5
+
+[[main]]
+parent = "Browse Resources"
+name = "Model Evaluation"
+url = "/foundation-model-resources/#model-evaluation"
+weight = 6
+
+[[main]]
+parent = "Browse Resources"
+name = "Model Release & Evaluation"
+url = "/foundation-model-resources/#model-release-and-evaluation"
+weight = 7
+
+
+
+
 
 [[main]]
 name = "Get Involved"
