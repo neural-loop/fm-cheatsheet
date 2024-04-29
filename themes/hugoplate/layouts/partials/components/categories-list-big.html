@@ -3,7 +3,7 @@
     {{ $sections := getJSON "assets/sections.json" }}
     {{ range $sections.sections }}
       <li>
-        <h2 class="mb-2 px-0 py-0 pr-1 font-normal">{{ .name }}</h2>
+        <h2 id="{{ .name | urlize }}"  class="mb-2 px-0 py-0 pr-1 font-normal">{{ .name }}</h2>
 <ul class="space-y-4">
   {{ $section := . }}
   <!-- Collect matching pages into a slice -->
