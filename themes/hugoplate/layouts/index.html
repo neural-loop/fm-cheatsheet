@@ -25,7 +25,7 @@
             <h2 class="pb-6 pt-4 font-normal">Foundation Model Training Flowchart</h2>
 
             <div class="rounded bg-white p-4">
-              {{ partial "gallery.html" (dict "Dir" "/images/home/" "Class" "p-4 pb-0")}}
+              {{ partial "gallery.html" (dict "Dir" "images/home/" "Class" "p-4 pb-0")}}
               This cheatsheet serves as a succinct guide, prepared by foundation model developers for foundation model
               developers.<br>
               <div class="flex justify-end mr-2"> <!-- Use Tailwind's flex utilities -->
@@ -68,8 +68,7 @@
     <div class="row justify-center">
       <div class="lg:col-12">
         <div class="content mb-10 px-0 mx-0">
-          {{ partial "image" (dict "Src" "img.png" "Context" .Page "Alt" .Title "Class" "mx-auto  bg-white" "Command"
-          "Fit") }}
+          {{ partial "image" (dict "Src" "images/supporters/supporters.png" "Alt" .Title "Class" "mx-auto  bg-white" "Size" "1200x") }}
           <p class="mt-0 pt-0 text-sm text-center">Assembled by open model developers from AI2, EleutherAI, Google,
             Hugging Face, Masakhane, MIT, MLCommons, Princeton, Stanford CRFM, University of California Santa Barbara
             (UCSB), Univesity College London (UCL) and University of Washington (UW).</p>
