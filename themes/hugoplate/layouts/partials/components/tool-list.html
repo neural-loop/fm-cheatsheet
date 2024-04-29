@@ -2,7 +2,7 @@
 {{ $jsonData := where $data "categories" "intersect" (.Params.short_name | slice) }}
 <ul class="list-none p-0">
   {{ range $index, $entry := $jsonData }}
-  <li class="flex items-start mb-6 bg-white dark:bg-slate-900 p-4 pt-2 rounded">
+  <li class="flex items-start mb-6 bg-white dark:bg-slate-900 p-4 pt-2 pb-0 rounded">
     {{ if $entry.logo }}
     <img src="/images/gh-icons/{{ $entry.logo }}" alt="{{ $entry.name }}"
          class="bg-white mr-5 ml-2 mt-4 w-16 h-16 rounded-full">
@@ -42,7 +42,7 @@
   {{ end }}
 
   <div class="flex justify-between">
-    <ul class="social-icons">
+    <ul class="social-icons p-0 m-0">
       {{ with $entry.paper_link }}
       <li>
         <a class="mt-2" href="{{ . }}" target="_blank" rel="nofollow noopener noreferrer">
