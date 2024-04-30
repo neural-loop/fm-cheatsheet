@@ -2,11 +2,11 @@
 # favicon
 favicon = "images/favicon.png"
 # logo
-logo = "images/fmcheatsheet-logo.png"
+logo = "images/fmcheatsheet-logo-large.png"
 logo_darkmode = "images/fmcheatsheet-logo-dark.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "330px"
+logo_width = "371px"
 logo_height = "25px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
@@ -39,7 +39,7 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Download Cheatsheet"
+label = "Download Cheatsheet (.pdf)"
 link = "foundation-model-development-cheatsheet.pdf"
 
 # search

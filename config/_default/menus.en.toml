@@ -1,11 +1,6 @@
 ############# English navigation ##############
 
 [[main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[main]]
 name = "Browse Resources"
 url = "/foundation-model-resources/"
 weight = 2

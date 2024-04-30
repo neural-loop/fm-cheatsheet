@@ -25,13 +25,13 @@
             <h2 class="pb-6 pt-4 font-normal">Foundation Model Training Flowchart</h2>
 
             <div class="rounded bg-white p-4">
-              {{ partial "gallery.html" (dict "Dir" "images/home/" "Class" "p-4 pb-0")}}
+              {{ partial "gallery.html" (dict "Dir" "images/home/" "Class" "p-4 pb-0" "Webp" "True")}}
               This cheatsheet serves as a succinct guide, prepared by foundation model developers for foundation model
               developers.<br>
               <div class="flex justify-end mr-2"> <!-- Use Tailwind's flex utilities -->
-                <a class="btn btn-primary mt-6 mb-2" href="foundation-model-development-cheatsheet.pdf"><i
-                  class="fa fa-file pr-2"></i>
-                  Download Cheatsheet</a>
+                <a class="btn btn-primary mt-6 mb-2" style="text-transform: none" href="foundation-model-development-cheatsheet.pdf">
+                  <i class="fa fa-file pr-2"></i>
+                  Download Cheatsheet (.pdf)</a>
                 <a class="btn btn-primary mt-6 mb-2 ml-4" href="/foundation-model-resources/"><i
                   class="fa fa-square-caret-right pr-2 text-xl"></i>
                   Browse Resources</a>
