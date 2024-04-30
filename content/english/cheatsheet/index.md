@@ -1,5 +1,5 @@
 ---
 title: "Cheatsheet"
-description: "Foundation Models Cheatsheet"
+description: "Foundation Model Cheatsheet"
 type: "cheatsheet"
 ---

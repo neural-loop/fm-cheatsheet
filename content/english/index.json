@@ -3,13 +3,13 @@
   "@type": "Organization",
   "url": "https://fmcheatsheet.org",
   "logo": "https://fmcheatsheet.org/images/foundation-models.png",
-  "name": "Foundation Models Cheat Sheet",
-  "brand": "Foundation Models Cheat Sheet",
+  "name": "Foundation Model Cheasheet",
+  "brand": "Foundation Model Cheatsheet",
   "keywords": "Foundation Models, AI Models, AI Research, ML Tools, AI Resources",
-  "slogan": "By Foundation Model Developers For Foundation Model Developers",
+  "slogan": "Resources for Foundation Model Development",
   "mainEntityOfPage": {
     "@type": "WebSite",
     "@id": "https://fmcheatsheet.org"
   },
-  "description": "Foundation Models Cheat Sheet is a community-driven resource for AI researchers and developers to discover, compare, and use the latest foundation models and tools."
+  "description": "Foundation Model Cheat Sheet is a community-driven resource for AI researchers and developers to discover, compare, and use the latest foundation models and tools."
 }
