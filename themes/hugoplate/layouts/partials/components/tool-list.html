@@ -4,10 +4,9 @@
   {{ range $index, $entry := $jsonData }}
   <li class="flex items-start mb-6 bg-white dark:bg-slate-900 p-4 pt-2 pb-0 rounded">
     {{ if $entry.logo }}
-{{ partial "image" (dict "Src" (printf "/images/gh-icons/%s" $entry.logo) "Alt" "logo" "Size" "64x64" "Command" "Crop"
-    "Class" "bg-white mr-5 ml-2 mt-4 w-16 h-16 rounded-full") }}
-<!--    <img src="/images/gh-icons/{{ $entry.logo }}" alt="{{ $entry.name }}"-->
-<!--         class="bg-white mr-5 ml-2 mt-4 w-16 h-16 rounded-full">-->
+    {{ $path := printf "images/cached-icons/%s" $entry.logo }}
+    {{ partial "image.html" (dict "Src" $path "Size" "64x64" "Command" "Resize"
+    "Class" "bg-white mr-5 ml-2 mt-4 w-16 h-16 rounded-full" "Context" . ) }}
     {{ else }}
     {{ if eq $entry.primary_link "GitHub" }}
     <img src="/images/resource-icons/github-light.png" alt="{{ $entry.name }}"
