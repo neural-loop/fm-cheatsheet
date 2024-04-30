@@ -86,12 +86,13 @@
       {{ $username := index $githubUrlParts 3 }}
       {{ $repository := index $githubUrlParts 4 }}
       <img class="pl-2 mt-0" src="https://img.shields.io/github/stars/{{ index $githubUrlParts 3 }}/{{ index $githubUrlParts 4 }}.svg?style=social"
-                   style="display: inline; margin-bottom: 0 !important; vertical-align: text-bottom; height: 30px" class="mt-0">
+                   style="display: inline; margin-bottom: 0 !important; vertical-align: text-bottom; height: 30px" class="mt-0"
+                  alt="Github Stars">
       {{ end }}</li>
       {{ end }}
     </ul>
 
-    <ul class="modalities list-none">
+    <ul class="pt-0 mt-0 modalities list-none">
       {{ range $modality := $entry.modalities }}
       <li class="inline-grid">
         {{ if eq $modality "Text" }}

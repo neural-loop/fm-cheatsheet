@@ -9,7 +9,7 @@
     <div
       class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light rounded-2xl bg-gradient-to-b px-8
         pt-12 pb-6">
-      <h1>{{ .Title | title }}</h1>
+      <h1 class="font-normal text-h1-sm">{{ .Title | title }}</h1>
 <!--      <p>{{ .Description }}</p>-->
       <p>{{ .Content }}</p>
       <div class="mt-6 flex items-end justify-between">
@@ -43,7 +43,7 @@
       <article class="xl:col-8">
         <div class="content mb-10">
           <div class="flex justify-between items-center">
-<h2 class="pb-2 font-normal">{{ .Params.short_name }} Resources</h2>
+<h2 class="pb-0 font-normal">{{ .Params.short_name }} Resources</h2>
             <div class="pb-2">
               <a class="btn-primary btn btn-sm" href="/contribute/">
                 <i class="fas pb-1 fa-circle-plus text-3xl pr-2" style="vertical-align: middle;"></i> Add Resource</a>
