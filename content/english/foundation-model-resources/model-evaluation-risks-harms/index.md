@@ -1,5 +1,5 @@
 ---
-title: "Model Evaluation Resources for Foundation Models"
+title: "Risk & Harms Evaluation Resources for Foundation Models"
 short_name: "Model Evaluation: Risks & Harms"
 type: "fm-resource-category"
 date: "2024-03-17"
