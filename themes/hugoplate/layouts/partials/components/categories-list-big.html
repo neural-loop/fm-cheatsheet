@@ -18,17 +18,6 @@
         <!-- Sort the slice by section_id -->
         {{ $sortedPages := sort $matchingPages "Params.section_id" "asc" }}
         {{ range $sortedPages }}
-        <!-- Display content for matching pages -->
-        <li class="flex items-start justify-between align-text-top">
-          <a class="hover:text-primary dark:hover:text-darkmode-primary flex items-start"
-             href="{{ .Permalink }}" style="min-width: 150px;">
-            {{ partial "image" (dict "Src" .Params.image "Context" .Page
-        "Alt" .Title "Size" "112x63" "Command" "Fit" "Class" "m-0 pl-4 pt-3  sm:hidden lg:inline") }}
-            <div class="flex flex-col justify-center ml-4"> <!-- Center text along vertical axis -->
-              <h3 class="font-normal">{{ .Params.short_name }}</h3>
-              <p>{{ .Description }}</p> <!-- Description on a new line -->
-            </div>
-          </a>
           {{ $data := getJSON "assets/resources.json" }}
           {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
           {{ $filteredDataVision := where $filteredData "modalities" "intersect" (slice "Vision") }}
@@ -38,6 +27,26 @@
           {{ $filteredDataVision := len $filteredDataVision }}
           {{ $filteredDataText := len $filteredDataText }}
           {{ $filteredDataSpeech := len $filteredDataSpeech }}
+        <!-- Display content for matching pages -->
+        <li class="flex items-start justify-between align-text-top">
+          <a class="hover:text-primary dark:hover:text-darkmode-primary flex items-start"
+             href="{{ .Permalink }}" style="min-width: 150px;">
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page
+        "Alt" .Title "Size" "112x63" "Command" "Fit" "Class" "m-0 pl-4 pt-3  sm:hidden lg:inline") }}
+            <div class="flex flex-col justify-center ml-4"> <!-- Center text along vertical axis -->
+              <h3 class="font-normal inline-block">{{ .Params.short_name }}</h3>
+              <span class="inline">
+                Resources {{ $entryCount }}
+               Vision {{ $filteredDataVision }}
+                Speech {{ $filteredDataSpeech }}
+                Text {{ $filteredDataText }}
+              </span>
+                            <p>{{ .Description }}<br>
+
+              </p> <!-- Description on a new line -->
+            </div>
+          </a>
+
           <!--      <div class="">-->
           <!--        <div-->
           <!--          class="bg-gray-300 font-bold text-center text-black px-0 py-0 rounded-lg"-->

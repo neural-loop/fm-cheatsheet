@@ -2,15 +2,19 @@
 
 {{ $data := getJSON "assets/resources.json" }}
 {{ $filteredData := where $data "categories" "intersect" (.Params.short_name | slice) }}
+{{ $filteredDataVision := where $filteredData "modalities" "intersect" (slice "Vision") }}
+{{ $filteredDataText := where $filteredData "modalities" "intersect" (slice "Text") }}
+{{ $filteredDataSpeech := where $filteredData "modalities" "intersect" (slice "Speech") }}
 {{ $entryCount := len $filteredData }}
-
+{{ $filteredDataVision := len $filteredDataVision }}
+{{ $filteredDataText := len $filteredDataText }}
+{{ $filteredDataSpeech := len $filteredDataSpeech }}
 <section>
   <div class="container text-left">
     <div
       class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light rounded-2xl bg-gradient-to-b px-8
         pt-12 pb-6">
       <h1 class="font-normal text-h1-sm">{{ .Title | title }}</h1>
-<!--      <p>{{ .Description }}</p>-->
       <p>{{ .Content }}</p>
       <div class="mt-6 flex items-end justify-between">
         {{ partial "components/breadcrumb" (dict "Context" . "Class" "align-text-bottom") }}
@@ -43,7 +47,13 @@
       <article class="xl:col-12">
         <div class="content mb-10">
           <div class="flex justify-between items-center">
-<h2 class="pb-0 font-normal">{{ .Params.short_name }}</h2>
+            <h2 class="pb-0 font-normal mb-0 mt-0">{{ .Params.short_name }} </h2>
+              <span class="">
+                Resources {{ $entryCount }}
+                Vision {{ $filteredDataVision }}
+                Speech {{ $filteredDataSpeech }}
+                Text {{ $filteredDataText }}
+              </span>
             <div class="pb-0">
               <a class="btn-primary btn btn-sm" href="/contribute/">
                 <i class="fas pb-1 fa-circle-plus text-3xl pr-2" style="vertical-align: middle;"></i> Add Resource</a>

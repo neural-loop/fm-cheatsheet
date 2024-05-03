@@ -17,3 +17,4 @@ hugo_stats_decoded.json
 go.sum
 yarn.lock
 /static/formHandle.php
+/push.sh
