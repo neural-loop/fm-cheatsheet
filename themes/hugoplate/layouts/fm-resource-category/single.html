@@ -28,8 +28,8 @@
           </div>
           <div class="lg:col-5 pb-4">
             {{ if .Params.image }}
-            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded sm:hidden lg:block" "Size"
-            "736x414" "Command" "Fit") }}
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded-xl sm:hidden lg:block" "Size"
+            "736x" "Command" "Resize") }}
             {{ end }}
           </div>
         </div>
@@ -40,7 +40,7 @@
 <section class="section pt-2">
   <div class="container">
     <div class="row justify-center">
-      <article class="xl:col-8">
+      <article class="xl:col-12">
         <div class="content mb-10">
           <div class="flex justify-between items-center">
 <h2 class="pb-0 font-normal">{{ .Params.short_name }}</h2>
@@ -52,14 +52,6 @@
           {{ partial "components/tool-list" . }}
         </div>
       </article>
-      <div class="xl:col-4">
-        <div class="text-center">
-          <p>~ Share Page ~</p>
-          {{ partial "social-share" (dict "Context" . "Class" "pb-4 share-icons" "Title" (i18n "") "Whatsapp" true
-          "Telegram" false "Vk" false "Tumblr" false "Pinterest" false) }}
-        </div>
-        {{ partial "components/categories-list" . }}
-      </div>
     </div>
   </div>
 </section>
