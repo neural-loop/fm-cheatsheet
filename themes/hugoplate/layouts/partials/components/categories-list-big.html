@@ -32,7 +32,7 @@
           <a class="hover:text-primary dark:hover:text-darkmode-primary flex items-start"
              href="{{ .Permalink }}" style="min-width: 150px;">
             {{ partial "image" (dict "Src" .Params.image "Context" .Page
-        "Alt" .Title "Size" "112x63" "Command" "Fit" "Class" "m-0 pl-4 pt-3  sm:hidden lg:inline") }}
+        "Alt" .Title "Size" "250x" "Command" "Resize" "Class" "m-0 pl-4   sm:hidden lg:inline") }}
             <div class="flex flex-col justify-center ml-4"> <!-- Center text along vertical axis -->
               <h3 class="font-normal inline-block">{{ .Params.short_name }}</h3>
               <span class="inline">
