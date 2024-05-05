@@ -11,8 +11,8 @@
           </div>
           <div class="lg:col-5 pb-6">
             {{ if .Params.image }}
-            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded-xl sm:hidden lg:block" "Size"
-            "736x414" "Command" "Crop") }}
+            {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "w-full rounded-xl sm:hidden lg:block"
+            "Size" "736x" "Command" "Resize") }}
             {{ end }}
           </div>
         </div>
