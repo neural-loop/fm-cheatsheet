@@ -52,7 +52,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      sm: "540px",
+      sm: "240px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
