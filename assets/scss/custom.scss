@@ -245,6 +245,11 @@ pre {
   }
 }
 
+@media (min-width: 240px) {
+    .container {
+        max-width: 100%;
+    }
+}
 @media (min-width: 540px) {
   .container {
     max-width: 100%;
