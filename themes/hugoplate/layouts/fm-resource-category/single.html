@@ -36,6 +36,12 @@
         <div class="content mb-10">
           <div class="flex justify-between items-center">
             <h2 class="pb-0 font-normal mb-0 mt-0 align-middle">{{ .Params.short_name }} </h2>
+            <div class="pb-0">
+              <a class="btn-primary btn btn-sm" href="/contribute/">
+                <i class="fas pb-1 fa-circle-plus text-3xl pr-2" style="vertical-align: middle;"></i> Add Resource</a>
+            </div>
+          </div>
+          <div class="flex  justify-items-end justify-end mt-4">
             <span class="mr-3 bg-green-200 dark:bg-green-900 rounded px-2 py-1">
               <i class="fas fa-file-alt fa-lg pr-2"></i> Text {{ $filteredDataText }}
             </span>
@@ -45,11 +51,7 @@
             <span class="mr-3 bg-fuchsia-200 dark:bg-fuchsia-900 rounded px-2 py-1 text-center">
               <i class="fas fa-microphone fa-lg pr-2"></i> Speech {{ $filteredDataSpeech }}
             </span>
-            <div class="pb-0">
-              <a class="btn-primary btn btn-sm" href="/contribute/">
-                <i class="fas pb-1 fa-circle-plus text-3xl pr-2" style="vertical-align: middle;"></i> Add Resource</a>
             </div>
-          </div>
           {{ partial "components/tool-list" . }}
         </div>
       </article>
