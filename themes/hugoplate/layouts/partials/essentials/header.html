@@ -4,11 +4,16 @@
     <div class="order-0">
       <!-- navbar brand/logo -->
       <a class="navbar-brand block" href="{{ site.BaseURL | relLangURL }}">
-        {{ partial "image.html" (dict "Src" "images/fmcheatsheet-logo.png"
-        "Size" "371x25" "Command" "Resize" "Context" .  "Class" "img logo-light"
-        "Alt" "Foundation Models Cheatsheet") }}
+                {{ partial "logo" }}
 
-<!--        <img fetchpriority="high" decoding="async" class="img logo-light" width="371" height="25" src="/images/fmcheatsheet-logo-large_hucf0986b6a5a6ead8b09aad93595315ca_8372_742x0_resize_q90_h2_lanczos_3.webp" alt="Foundation Model Cheatsheet" onerror="this.onerror=null;this.src='\/images\/fmcheatsheet-logo-large_hucf0986b6a5a6ead8b09aad93595315ca_8372_742x0_resize_lanczos_3.png';">-->
+{{/*        {{ partial "image.html" (dict "Src" "images/fmcheatsheet-logo.png"*/}}
+{{/*          "Size" "371x25" "Command" "Resize" "Context" . "Class" "img logo-light"*/}}
+{{/*          "Alt" "Foundation Models Cheatsheet") }}*/}}
+
+{{/*        <img fetchpriority="high" decoding="async" class="img logo-light" width="371" height="25"*/}}
+{{/*             src="/images/fmcheatsheet-logo-large_hucf0986b6a5a6ead8b09aad93595315ca_8372_742x0_resize_q90_h2_lanczos_3.webp"*/}}
+{{/*             alt="Foundation Model Cheatsheet"*/}}
+{{/*             onerror="this.onerror=null;this.src='\/images\/fmcheatsheet-logo-large_hucf0986b6a5a6ead8b09aad93595315ca_8372_742x0_resize_lanczos_3.png';">*/}}
       </a>
     </div>
     <input id="nav-toggle" type="checkbox" class="hidden" />
@@ -32,7 +37,7 @@
       {{ $currentPage := . }}
       {{ range site.Menus.main }}
         {{ $menuURL := .URL | absLangURL }}
-        {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+        {{ $pageURL := $currentPage.Permalink | absLangURL }}
         {{ $active := eq $menuURL $pageURL }}
         {{ if .HasChildren }}
           <li class="nav-item nav-dropdown group relative">
@@ -89,7 +94,7 @@
               {{- else -}}
                 {{- .URL | relLangURL -}}
               {{- end -}}"
-              >{{ .Name }}</a
+            >{{ .Name }}</a
             >
           </li>
         {{ end }}
@@ -109,7 +114,7 @@
         {{ if .enable }}
           <button
             aria-label="search"
-            class="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white"
+            class="py-4 border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white"
             data-target="search-modal">
             <i class="fa-solid fa-search"></i>
           </button>
