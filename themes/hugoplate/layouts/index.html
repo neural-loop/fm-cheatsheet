@@ -7,7 +7,7 @@
         <center>
           <div class="rounded-l-full p-4" style="background-color:rgba(255,255,255,0.67); ">
             {{ partial "image" (dict "Src" "/images/foundation-model-cheatsheet.png" "Class" "" "Loading" "eager" "Alt"
-            "feature image" "Size" "200x200" "Command" "Fit") }}
+            "feature image" "Size" "200x200" "Command" "Scale" "Webp" "True") }}
           </div>
         </center>
       </div>
@@ -25,7 +25,7 @@
           <div class="col-md-12">
             <h2 class="pb-6 pt-0 font-normal">Foundation Model Training Overview</h2>
             <div class="rounded bg-white p-4">
-              {{ partial "gallery.html" (dict "Dir" "images/home/" "Class" "p-4 pb-0" "Webp" "True")}}
+              {{ partial "gallery.html" (dict "Dir" "images/home/" "Size" "300x" "Class" "p-4 pb-0" "Webp" "True")}}
               Discover our curated list of resources covering every stage of the AI lifecycle, from data preparation to
               model evaluation and release. Explore comprehensive catalogs of data sources, tools for data preparation,
               strategies for model training, insights on environmental impact, and frameworks for model evaluation and
